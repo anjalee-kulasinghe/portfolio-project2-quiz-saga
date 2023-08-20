@@ -9,6 +9,13 @@ body{
     font-family: 'Lato', Arial, sans-serif;
 }
 
+.heding1,
+.heding2,
+.heding3 {
+    font-family: 'Bree Serif', Arial, sans-serif;
+    color: white;
+}
+
 /* Navigation */
 .navigation {
     background-color: #669113;
@@ -43,7 +50,20 @@ body{
     background-color: white;
 }
 
+/* Home section */
+.home-section {
+    padding-top: 5rem;
+    text-align: center;
+}
 
+.welcome-section{
+    padding-top: 5rem;
+    text-align: center;
+}
+
+/* #userPage {
+    text-align: center;
+} */
 
 /* Footer section */
 footer {
