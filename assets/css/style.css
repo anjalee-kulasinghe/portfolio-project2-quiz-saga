@@ -130,10 +130,14 @@ body{
     display: none;
 }
 
+/*------------------add background color for correct and incorrect answers */
+.correct {
+    background-color: lightgreen;
+}
 
-
-
-
+.incorrect {
+    background-color: lightcoral;
+}
 
 
 
