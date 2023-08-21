@@ -12,6 +12,8 @@ function greetings() {
     userPage.style.display = "none";
 }
 
+/* ------------------------------------------------------------------------*/
+
 /* Adding questions and answers */
 let questions = [
     /* question 1 */
@@ -70,6 +72,9 @@ let quizElement = document.getElementById("question");
 let answerElements = document.getElementById("quizAnswers");
 let nextButton = document.getElementById("btnNext");
 
+let scoreText = document.querySelector("#score");
+let progressBarFull = document.querySelector("#progressBarFull");
+
 /* variables to store the question index and the score */
 let currentQuestionIndex = 0;
 let score = 0;
@@ -101,6 +106,9 @@ function  showQuestion() {
         }
 
         button.addEventListener("click", selectAnswer);
+
+        progressText.innerHTML = `Question ${questionNumber} of ${questions.length}`;
+        progressBarFull.style.width = `${(questionNumber/questions.length) * 100}%`
     });
 }
 /**
@@ -123,6 +131,7 @@ function selectAnswer(e){
     if(isCorrect){
         selectedAnswer.classList.add("correct");
         score ++;
+        scoreText.innerHTML = score;
     } else {
         selectedAnswer.classList.add("incorrect");
     }
@@ -157,7 +166,7 @@ function handleNextButton(){
 function showScore(){
     resetState();
     quizElement.innerHTML = `You have scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML = "Play Again";
+    nextButton.innerHTML = "Home Page";
     nextButton.style.display = "block";
 }
 
@@ -169,4 +178,5 @@ nextButton.addEventListener("click", () => {
         startQuiz();
     }
 })
+
 startQuiz();
