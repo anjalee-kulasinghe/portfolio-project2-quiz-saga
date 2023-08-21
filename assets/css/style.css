@@ -54,21 +54,117 @@ body{
 .home-section {
     padding-top: 5rem;
     text-align: center;
+    background: url(../images/BackGroundImage.jpg) center center / cover no-repeat fixed;
+    height: 400px;
 }
 
+/* User section */
 .welcome-section{
     padding-top: 5rem;
     text-align: center;
+    height: 400px;
 }
 
-/* #userPage {
-    text-align: center;
-} */
+/* Quiz section */
+
+.quiz-section{
+    padding-top: 5rem;
+    /* text-align: center; */
+}
+
+.quizBox {
+    width: 500px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #669113;
+    box-shadow: 0 0 5px 3px rgba(192, 238, 132, 0.3);
+    border-radius: 15px;
+}
+
+.quizHeader {
+    background-color: #A4BC64;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+}
+
+.quizQuestion {
+    display: none;
+}
+
+.quizQuestion.active {
+    display: block;
+}
+
+.quizQuestion h4 {
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+
+.quizAnswer {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.quizAnswer input {
+    opacity: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.quizAnswer span {
+    background-color: #A4BC64;
+    display: block;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.quizAnswer:hover span {
+    background-color: darkseagreen;
+}
+
+.quizAnswer input:checked + span {
+    background-color: #f93c3c;
+}
+
+.quizAnswer input[valid]:checked + span {
+    background-color: white;
+    color: #669113;
+}
+
+.quizFooter {
+    padding: 10px 0 0;
+    text-align: right;
+}
+
+.buttonSkip {
+    background-color: #182605;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+
+.buttonSkip:hover {
+    background-color: #fff;
+    color: #182605;
+}
 
 /* Footer section */
 footer {
-    background-color: #669113;
     padding-bottom: 1rem;
+    background-color: #669113;
     text-align: center;
     width: auto;
     bottom: 0;

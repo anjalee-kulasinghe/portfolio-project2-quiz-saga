@@ -38,6 +38,7 @@
     <!-- ================================================================================================== -->
     <!-- start of the user section -->
     <section class="welcome-section">
+        <br>
     <h2 id="headingText">Enter your username:</h2>
     <div id="userPage">
         <input type="text" id="userName"> <br>
@@ -48,8 +49,128 @@
 
 
     <!-- ================================================================================================== -->
-    <section class="quiz-section" id="quiz"></section>   
+    <section class="quiz-section" id="quiz">   
     <h1 class="heding1">Quiz catogories</h1>
+    <div class="quizBox">
+        <div class="quizHeader">
+            <span>Score: <span id="score">0</span></span>
+            <span id="countdown">0</span>
+        </div>
+        <div class="quizBody">
+            <!-- Question 1 -->
+            <div class="quizQuestion active">
+                <h4>1. What is the smallest planet in our solar system?</h4>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer1" valid="valid">
+                    <span>Mercury</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer1">
+                    <span>Jupiter</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer1">
+                    <span>Earth</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer1">
+                    <span>Mars</span>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="quizQuestion">
+                <h4>2. From what grain is the Japanese spirit Sake made?</h4>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer2">
+                    <span>Barley</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer2">
+                    <span>Couscous</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer2" valid="valid">
+                    <span>Rice</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer2">
+                    <span>Bulgur wheat</span>
+                </div>
+            </div>
+
+             <!-- Question 3 -->
+             <div class="quizQuestion">
+                <h4>3. What is the capital of New Zealand?</h4>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer3">
+                    <span>Auckland</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer3" valid="valid">
+                    <span>Wellington</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer3">
+                    <span>Queenstown</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer3">
+                    <span>Christchurch</span>
+                </div>
+            </div>
+
+             <!-- Question 4 -->
+             <div class="quizQuestion">
+                <h4>4. What element is denoted by the chemical symbol Sn in the periodic table?</h4>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer4">
+                    <span>Nickel</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer4">
+                    <span>Antimony</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer4">
+                    <span>Silicon</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer4" valid="valid">
+                    <span>Tin</span>
+                </div>
+            </div>
+
+             <!-- Question 5 -->
+             <div class="quizQuestion">
+                <h4>5. What was the most popular girls name in the UK in 2021?</h4>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer5" valid="valid">
+                    <span>Olivia</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer5">
+                    <span>Emily</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer5">
+                    <span>Isabella</span>
+                </div>
+                <div class="quizAnswer">
+                    <input type="radio" name="answer5">
+                    <span>Lily</span>
+                </div>
+            </div>
+
+             <!-- Total score -->
+             <div class="quizQuestion active">
+                <h4>Your total score is <span id="totalScore">0 </span>out of 100</h4>
+            </div>
+        </div>    
+        <div class="quizFooter">
+            <span class="buttonSkip" id="skip">Skip</span>
+        </div>
+    </div>
     </section>
     <!-- ================================================================================================== -->
 
