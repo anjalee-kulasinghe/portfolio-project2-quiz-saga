@@ -117,6 +117,10 @@ body{
     color: #fff;
 }
 
+.gameAnswer:disabled {
+    cursor: no-drop;
+}
+
 #btnNext {
     background-color: #000000;
     color: #fff;

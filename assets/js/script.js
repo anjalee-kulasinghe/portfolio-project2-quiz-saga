@@ -114,5 +114,26 @@ function resetState() {
     }
 }
 
+/**
+ * select the correct answer
+ */
+function selectAnswer(e){
+    let selectedAnswer = e.target;
+    let isCorrect = selectedAnswer.dataset.correct === "true";
+    if(isCorrect){
+        selectedAnswer.classList.add("correct");
+    } else {
+        selectedAnswer.classList.add("incorrect");
+    }
 
+    /* let allow only one answer to select. if the answer is incorrect highligt the correct answer*/
+    Array.from(answerElements.children).forEach(button => {
+        if(button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true; /* disable selecting another answer */
+    });
+    /* let the next button appear to the user */
+    nextButton.style.display = "block";
+}
 startQuiz();
