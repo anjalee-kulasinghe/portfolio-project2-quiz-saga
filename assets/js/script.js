@@ -138,6 +138,14 @@ function selectAnswer(e){
     nextButton.style.display = "block";
 }
 
+function handelNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showScore();
+    }
+}
 
 /* Defie the next button actions */
 nextButton.addEventListener("click", () => {
