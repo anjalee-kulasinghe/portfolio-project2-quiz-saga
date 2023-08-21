@@ -12,69 +12,57 @@ function greetings() {
     userPage.style.display = "none";
 }
 
-/* Quiz Score */
-let skip = document.getElementById("skip");
-let score = document.getElementById("score");
-let totalScore = document.getElementById("totalScore");
-let countdown = document.getElementById("countdown");
-
-let count = 0;
-let scoreCount = 0;
-let duration = 0;
-
-let quizQuestion = document.querySelectorAll(".quizQuestion");
-let quizAnswer = document.querySelectorAll(".quizQuestion .quizAnswer input");
-
-skip.addEventListener("click", function(){
-    quizStep();
-    duration == 10;
-})
- /* let the score added. Each correct question get 20 marks*/
-quizAnswer.forEach(function(quizAnswerSingle){
-    quizAnswerSingle.addEventListener("click", function(){
-        setTimeout(function(){
-            quizStep(); 
-            duration == 10;
-        },500)
-
-        let valid = this.getAttribute("valid");
-        if(valid === "valid") {
-            scoreCount += 20;
-            score.innerHTML = scoreCount;
-            totalScore.innerHTML = scoreCount;
-        } else {
-            scoreCount -= 20;
-            score.innerHTML = scoreCount;
-            totalScore.innerHTML = scoreCount;
-        }
-    })
-});
-/**
- * let the skip button works
- */
-function quizStep() {
-    count += 1;
-    for(let i = 0; i < quizQuestion.length; i++) {
-        quizQuestion[i].className = "quizQuestion";
+/* Adding questions and answers */
+let questions = [
+    /* question 1 */
+    {
+        question: "What is the smallest planet in our solar system?",
+        answers: [
+            {text: "Mercury", correct:true},
+            {text: "Jupiter", correct:false},
+            {text: "Earth", correct:false},
+            {text: "Mars", correct:false},            
+        ]
+    },
+    /* question 2 */
+    {
+        question: "From what grain is the Japanese spirit Sake made?",
+        answers: [
+            {text: "Barley", correct:false},
+            {text: "Couscous", correct:false},
+            {text: "Rice", correct:true},
+            {text: "Bulgur wheat", correct:false},            
+        ]
+    },
+    /* question 3 */
+    {
+        question: "What is the capital of New Zealand?",
+        answers: [
+            {text: "Auckland", correct:false},
+            {text: "Wellington", correct:true},
+            {text: "Queenstown", correct:false},
+            {text: "Christchurch", correct:false},            
+        ]
+    },
+    /* question 4 */
+    {
+        question: "What element is denoted by the chemical symbol Sn in the periodic table?",
+        answers: [
+            {text: "Nickel", correct:false},
+            {text: "Antimony", correct:false},
+            {text: "Silicon", correct:false},
+            {text: "Tin", correct:true},            
+        ]
+    },
+    /* question 5 */
+    {
+        question: "What was the most popular girls name in the UK in 2021?",
+        answers: [
+            {text: "Olivia", correct:true},
+            {text: "Emily", correct:false},
+            {text: "Isabella", correct:false},
+            {text: "Lily", correct:false},            
+        ]
     }
+];
 
-    quizQuestion[count].className = "quizQuestion active";
-    if(count == 5) {
-        skip.style.display = "none";
-        clearInterval(timeDuration);
-        countdown.innerHTML = 0;
-    }
-}
-
-/* set the timer in the quiz window */
-let timeDuration = setInterval(function(){
-    if(duration == 10) {
-        duration = 0;
-    }
-
-    duration += 1;
-    countdown.innerHTML = duration;
-    if(countdown.innerHTML == "10") {
-        quizStep();
-    }
-},1000);
