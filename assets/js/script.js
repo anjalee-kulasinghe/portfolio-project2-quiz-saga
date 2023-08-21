@@ -1,20 +1,4 @@
-// Welcome message to the user with the username has entered by the user
-
-let userName = document.querySelector("#userName");
-let headingText = document.querySelector("#headingText");
-let userPage = document.querySelector("#userPage");
-/**
- * Welcome message with the username user has enetered
- */
-function greetings() {
-    headingText.innerHTML = "";
-    headingText.innerHTML = "Hello " + userName.value + ". Select the quize that you would like to play.";
-    userPage.style.display = "none";
-}
-
-/* ------------------------------------------------------------------------*/
-
-/* Adding questions and answers */
+// Adding questions and answers
 let questions = [
     /* question 1 */
     {
@@ -66,7 +50,8 @@ let questions = [
             {text: "Lily", correct:false},            
         ]
     }
-];
+]; //array end here
+// --------------------------------------------------------------------------------------------------------------------------
 
 let quizElement = document.getElementById("question");
 let answerElements = document.getElementById("quizAnswers");
@@ -168,6 +153,11 @@ function showScore(){
     quizElement.innerHTML = `You have scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Home Page";
     nextButton.style.display = "block";
+
+    nextButton.addEventListener("click", function() {
+        // Redirect the user to the home page
+        window.location.assign("/"); // Change the URL to your home page URL
+    });
 }
 
 /* Defie the next button actions */
@@ -180,3 +170,14 @@ nextButton.addEventListener("click", () => {
 })
 
 startQuiz();
+
+
+// End page
+
+// let userName = document.querySelector("#userName");
+// let saveScore = document.querySelector("#saveScore");
+// let finalScore = document.querySelector("#finalScore");
+
+
+
+/* ------------------------------------------------------------------------*/

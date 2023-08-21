@@ -88,52 +88,14 @@ h3 {
     transform: none;
 }
 
-/* Navigation */
-/* .navigation {
-    background-color: #669113;
-    position: fixed;
-    overflow: hidden;
-    width: 100%;
-    top: 0;
-    height: 50px;
-    z-index: 100; 
-}
-
-.navigation ul {
-    text-align: right;
-}
-
-.navigation li {
-    display: inline-block;
-}
-
-.navigation li a {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    padding: 12px 16px;
-    display: inline-block;
-}
-
-.navigation a:hover {
-    color: #000000;
-    background-color: white;
-} */
-
-/* Home section */
-.home-section {
-    padding-top: 5rem;
-    text-align: center;
-    /* background: url(../images/BackGroundImage.jpg) center center / cover no-repeat fixed; */
-    height: 400px;
-}
-
 /* User section */
-.welcome-section{
-    padding-top: 5rem;
+#userName{
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
     text-align: center;
-    height: 400px;
+    margin-bottom: 1rem;
+    border-radius: 4px;
 }
 
 
@@ -229,14 +191,47 @@ h3 {
     background-color: lightcoral;
 }
 
+/* End page*/
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
 
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+}
 
+input::placeholder {
+    color: #D9DDDC;
+}
 
+#userName {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#saveScore {
+    border: none;
+}
+
+#endText {
+    font-size: 2.4rem;
+    color: #000000;
+    text-align: center;
+}
 
 /* Footer section */
 footer {
     padding-bottom: 1rem;
-    background-color: #669113;
+    background-color: #828282;
     text-align: center;
     width: auto;
     bottom: 0;
@@ -246,10 +241,10 @@ footer {
     overflow: auto;
 }
 
-footer>p {
+/* footer>p {
     color: white;
     font-weight: 900;
-}
+} */
 
 .text-uppercase {
     text-transform: uppercase;
@@ -258,6 +253,7 @@ footer>p {
 .social-networks {
     text-align: center;
     padding: 0;
+    background-color: #828282;
 }
 
 .social-networks>li {
@@ -265,7 +261,7 @@ footer>p {
 }
 
 .social-networks i{
-    font-size: 200%;
+    font-size: 2.4rem;
     padding: 1%;
-    color: white;
+    /* color: white; */
 }
