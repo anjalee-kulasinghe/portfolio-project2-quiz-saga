@@ -103,3 +103,16 @@ function  showQuestion() {
         button.addEventListener("click", selectAnswer);
     });
 }
+/**
+*re-set the answers area
+*/
+function resetState() {
+    nextButton.style.display = "none";
+    while(answerElements.firstChild)
+    {
+        answerElements.removeChild(answerElements.firstChild);
+    }
+}
+
+
+startQuiz();

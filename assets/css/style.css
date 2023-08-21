@@ -112,7 +112,7 @@ body{
     transition: all 0.3s;
 }
 
-.gameAnswer:hover {
+.gameAnswer:hover:not([disabled]) {
     background-color: #222;
     color: #fff;
 }
