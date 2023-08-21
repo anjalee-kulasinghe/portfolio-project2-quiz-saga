@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 50%;
     font-family: 'Lato', cursive;
 }
 
@@ -230,38 +230,17 @@ input::placeholder {
 
 /* Footer section */
 footer {
-    padding-bottom: 1rem;
     background-color: #828282;
+    color: rgb(0, 0, 0);
     text-align: center;
-    width: auto;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
     bottom: 0;
-    right: 0;
-    z-index: 3;
-    clear: both;
-    overflow: auto;
 }
 
-/* footer>p {
-    color: white;
-    font-weight: 900;
-} */
-
-.text-uppercase {
-    text-transform: uppercase;
-}
-
-.social-networks {
-    text-align: center;
-    padding: 0;
+footer h3 {
+    font-size: 2.2rem;
+    color: black;
     background-color: #828282;
-}
-
-.social-networks>li {
-    display: inline;
-}
-
-.social-networks i{
-    font-size: 2.4rem;
-    padding: 1%;
-    /* color: white; */
 }

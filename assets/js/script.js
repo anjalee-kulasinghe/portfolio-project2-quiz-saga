@@ -128,8 +128,11 @@ function selectAnswer(e){
         }
         button.disabled = true; /* disable selecting another answer */
     });
+    
     /* let the next button appear to the user */
     nextButton.style.display = "block";
+
+    
 }
 
 /**
@@ -156,7 +159,7 @@ function showScore(){
 
     nextButton.addEventListener("click", function() {
         // Redirect the user to the home page
-        window.location.assign("/"); // Change the URL to your home page URL
+        window.location.assign("/");
     });
 }
 
@@ -167,8 +170,18 @@ nextButton.addEventListener("click", () => {
     } else {
         startQuiz();
     }
-})
+});
 
+document.addEventListener("keydown", function(event) {
+    // Check if the pressed key is the Enter key (key code 13)
+    if (event.key === "Enter") {
+        if (currentQuestionIndex < questions.length) {
+            handleNextButton();
+        } else {
+            startQuiz();
+        }
+    }
+});
 startQuiz();
 
 
