@@ -80,3 +80,26 @@ function startQuiz() {
     nextButton.innerHTML = "Next";
     showQuestion();
 }
+/**
+ * Take the question and the answer from the questions array and give a nuber to the question
+ */
+function  showQuestion() {
+    resetState(); 
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNumber = currentQuestionIndex + 1;
+    quizElement.innerHTML = questionNumber + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        let button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("gameAnswer");
+        quizAnswers.appendChild(button);
+
+        /* assign the true or false */
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+
+        button.addEventListener("click", selectAnswer);
+    });
+}
