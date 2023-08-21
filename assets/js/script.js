@@ -138,7 +138,11 @@ function selectAnswer(e){
     nextButton.style.display = "block";
 }
 
-function handelNextButton(){
+/**
+ * check whether there is a next question 
+ * if not display the score of the user
+ */
+function handleNextButton(){
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length) {
         showQuestion();
@@ -147,10 +151,20 @@ function handelNextButton(){
     }
 }
 
+/**
+ * will display the final score of the user
+ */
+function showScore(){
+    resetState();
+    quizElement.innerHTML = `You have scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Play Again";
+    nextButton.style.display = "block";
+}
+
 /* Defie the next button actions */
 nextButton.addEventListener("click", () => {
     if(currentQuestionIndex < questions.length){
-        handelNextButton();
+        handleNextButton();
     } else {
         startQuiz();
     }
