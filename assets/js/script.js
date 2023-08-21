@@ -122,6 +122,7 @@ function selectAnswer(e){
     let isCorrect = selectedAnswer.dataset.correct === "true";
     if(isCorrect){
         selectedAnswer.classList.add("correct");
+        score ++;
     } else {
         selectedAnswer.classList.add("incorrect");
     }
@@ -136,4 +137,14 @@ function selectAnswer(e){
     /* let the next button appear to the user */
     nextButton.style.display = "block";
 }
+
+
+/* Defie the next button actions */
+nextButton.addEventListener("click", () => {
+    if(currentQuestionIndex < questions.length){
+        handelNextButton();
+    } else {
+        startQuiz();
+    }
+})
 startQuiz();
