@@ -64,6 +64,9 @@ let progressBarFull = document.querySelector("#progressBarFull");
 let currentQuestionIndex = 0;
 let score = 0;
 
+/**
+ * Start of the quiz.
+ */
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -71,7 +74,7 @@ function startQuiz() {
     showQuestion();
 }
 /**
- * Take the question and the answer from the questions array and give a nuber to the question
+ * Take the question and the answer from the questions array and give a nuber to the question.
  */
 function  showQuestion() {
     resetState(); 
@@ -96,6 +99,7 @@ function  showQuestion() {
         progressBarFull.style.width = `${(questionNumber/questions.length) * 100}%`
     });
 }
+
 /**
 *re-set the answers area
 */
@@ -121,18 +125,16 @@ function selectAnswer(e){
         selectedAnswer.classList.add("incorrect");
     }
 
-    /* let allow only one answer to select. if the answer is incorrect highligt the correct answer*/
+    /* let the user allow only to select one answer. if the answer is incorrect highligt the correct answer*/
     Array.from(answerElements.children).forEach(button => {
         if(button.dataset.correct === "true") {
             button.classList.add("correct");
         }
-        button.disabled = true; /* disable selecting another answer */
+        button.disabled = true; //disable selecting another answer
     });
     
     /* let the next button appear to the user */
     nextButton.style.display = "block";
-
-    
 }
 
 /**
@@ -159,27 +161,25 @@ function showScore(){
 
     nextButton.addEventListener("click", function() {
         // Redirect the user to the home page
-        window.location.assign("/");
+        window.location.assign("index.html");
     });
 }
 
-/* Defie the next button actions */
-nextButton.addEventListener("click", () => {
-    if(currentQuestionIndex < questions.length){
+/* Define the next button actions */
+function handleQuizAction() {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
         startQuiz();
     }
-});
+}
+
+nextButton.addEventListener("click", handleQuizAction);
 
 document.addEventListener("keydown", function(event) {
-    // Check if the pressed key is the Enter key (key code 13)
+    // Check if the pressed key is the Enter key
     if (event.key === "Enter") {
-        if (currentQuestionIndex < questions.length) {
-            handleNextButton();
-        } else {
-            startQuiz();
-        }
+        handleQuizAction();
     }
 });
 startQuiz();
