@@ -95,7 +95,8 @@
 }
 .hud-prefix {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .head-main-text {
@@ -103,10 +104,10 @@
 }
 
 #progressBar {
-    width: 20rem;
-    height: 3rem;
+    width: 8rem;
+    height: 1rem;
     border: 0.2rem solid lightgreen;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     border-radius: 50px;
     overflow: hidden;
 }
@@ -135,16 +136,16 @@
 .gameAnswer {
     background-color: #fff;
     color: #222;
-    /* font-weight: 500px; */
     width: 100%;
     border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 6px;
+    margin: 5px 0;
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 2.4rem;
+    font-size: 1rem;
     transition: all 0.3s;
+    font-weight: 600;
 }
 
 .gameAnswer:hover:not([disabled]) {
@@ -156,7 +157,7 @@
     cursor: no-drop;
 }
 
-#btnNext {
+#btnNext, #btnHome {
     background-color: #000000;
     color: #fff;
     border: 0;
@@ -166,7 +167,7 @@
     border-radius: 4px;
     cursor: pointer;
     display: none;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
 }
 
 /*------------------add background color for correct and incorrect answers */
@@ -223,7 +224,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Remove footer h3 background-color */
 .footer h3 {
     padding-bottom: 0;
 }

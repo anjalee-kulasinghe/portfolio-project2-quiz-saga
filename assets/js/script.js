@@ -129,6 +129,7 @@ let questions = [
 let quizElement = document.getElementById("question");
 let answerElements = document.getElementById("quizAnswers");
 let nextButton = document.getElementById("btnNext");
+let homeButton = document.getElementById("btnHome");
 
 let scoreText = document.querySelector("#score");
 let progressBarFull = document.querySelector("#progressBarFull");
@@ -254,12 +255,14 @@ function handleNextButton(){
 function showScore(){
     resetState();
     quizElement.innerHTML = `You have scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML = "Home Page";
+    nextButton.innerHTML = "Play again";
     nextButton.style.display = "block";
 
-    nextButton.addEventListener("click", function() {
+    homeButton.style.display = "block";
+    
+    homeButton.addEventListener("click", function() {
         // Redirect the user to the home page
-        window.location.assign("index.html");
+        window.location.assign("/index.html");
     });
 }
 
@@ -281,14 +284,4 @@ document.addEventListener("keydown", function(event) {
     }
 });
 startQuiz();
-
-
-// End page
-
-// let userName = document.querySelector("#userName");
-// let saveScore = document.querySelector("#saveScore");
-// let finalScore = document.querySelector("#finalScore");
-
-
-
 /* ------------------------------------------------------------------------*/
