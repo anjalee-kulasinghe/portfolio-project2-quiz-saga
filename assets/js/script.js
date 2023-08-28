@@ -172,8 +172,21 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
+    
+    // Shuffle the questions array to randomize the order
+    questions = shuffleArray(questions);
+    
+    // Take the first 5 questions from the shuffled array
+    let selectedQuestions = questions.slice(0, 5);
+    
+    // Update the questions array with the selected questions
+    questions = selectedQuestions;
+    
     showQuestion();
 }
+
+
+
 /**
  * Take the question and the answer from the questions array and give a nuber to the question.
  */
