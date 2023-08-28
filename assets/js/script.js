@@ -49,7 +49,108 @@ let questions = [
             {text: "Isabella", correct:false},
             {text: "Lily", correct:false},            
         ]
+    };
+     /* question 6 */
+     {
+        question: "What country has the highest life expectancy?",
+        answers: [
+            {text: "Japan", correct:false},
+            {text: "Hong Kong", correct:true},
+            {text: "South Korea", correct:false},
+            {text: "China", correct:false},            
+        ]
+    };
+    /* question 7 */
+    {
+        question: "Who was the Ancient Greek God of the Sun?",
+        answers: [
+            {text: "Zeus", correct:false},
+            {text: "Athena", correct:false},
+            {text: "Apollo", correct:true},
+            {text: "Artemis", correct:false},            
+        ]
+    };
+    /* question 8 */
+    {
+        question: "What year was the United Nations established? ",
+        answers: [
+            {text: "1940", correct:false},
+            {text: "1945", correct:true},
+            {text: "1948", correct:false},
+            {text: "1955", correct:false},            
+        ]
+    };
+    /* question 9 */
+    {
+        question: "Who has won the most total Academy Awards?",
+        answers: [
+            {text: "John Ford", correct:false},
+            {text: "Alan Menken", correct:false},
+            {text: "Katharine Hepburn", correct:false},
+            {text: "Walt Disney", correct:true},            
+        ]
+    };
+    /* question 10 */
+    {
+        question: 'What company was originally called "Cadabra"?',
+        answers: [
+            {text: "Amazon", correct:true},
+            {text: "Walmart", correct:false},
+            {text: "Target", correct:false},
+            {text: "eBay", correct:false},            
+        ]
+    };
+    /* question 11 */
+    {
+        question: "How many elements are in the periodic table?",
+        answers: [
+            {text: "119", correct:false},
+            {text: "120", correct:false},
+            {text: "116", correct:false},
+            {text: "118", correct:true},            
+        ]
+    };
+    /* question 12 */
+    {
+        question: "How many ghosts chase Pac-Man at the start of each game?",
+        answers: [
+            {text: "2", correct:false},
+            {text: "4", correct:true},
+            {text: "6", correct:false},
+            {text: "1", correct:false},            
+        ]
+    };
+    /* question 13 */
+    {
+        question: "What country drinks the most coffee per capita?",
+        answers: [
+            {text: "Brazil", correct:false},
+            {text: "Italy", correct:false},
+            {text: "Finland", correct:true},
+            {text: "Norway", correct:false},            
+        ]
+    };
+    /* question 14 */
+    {
+        question: 'What company was initially known as "Blue Ribbon Sports"?',
+        answers: [
+            {text: "Adidas", correct:false},
+            {text: "Puma", correct:false},
+            {text: "Reebok", correct:false},
+            {text: "Nike", correct:true},            
+        ]
+    };
+    /* question 15 */
+    {
+        question: "What sports car company manufactures the 911?",
+        answers: [
+            {text: "Ferrari", correct:false},
+            {text: "Lamborghini", correct:false},
+            {text: "Porsche", correct:true},
+            {text: "McLaren", correct:false},            
+        ]
     }
+
 ]; //array end here
 // --------------------------------------------------------------------------------------------------------------------------
 

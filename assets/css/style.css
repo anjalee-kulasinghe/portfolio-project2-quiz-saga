@@ -5,27 +5,15 @@
     background-color:azure;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: 50%;
     font-family: 'Lato', cursive;
 }
 
-h1 {
-    font-size: 5.4rem;
+.heding1,
+.heding2,
+.heding3 {
+    font-family: 'Bree Seri', sans-serif;
     color: black;
-    margin-bottom: 5rem;
-}
-
-h2 {
-    font-size: 4.2rem;
-    margin-bottom: 4rem;
-    color: black;
-}
-
-h3 {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    color: black;
+    padding-bottom: 1rem;
 }
 
 .container {
@@ -64,11 +52,10 @@ h3 {
 
 /* style the buttons */
 .btn {
-    font-size: 2.4rem;
-    padding: 2rem 0;
-    width: 30rem;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    width: 15rem;
     text-align: center;
-    margin-bottom: 1rem;
     text-decoration: none;
     color: white;
     background: black;
@@ -118,7 +105,7 @@ h3 {
 #progressBar {
     width: 20rem;
     height: 3rem;
-    border: 0.2rem solid greenyellow;
+    border: 0.2rem solid lightgreen;
     margin-top: 2rem;
     border-radius: 50px;
     overflow: hidden;
@@ -126,7 +113,7 @@ h3 {
 
 #progressBarFull {
     height: 100%;
-    background: greenyellow;
+    background: lightgreen;
     width: 0%;
 }
 
@@ -231,16 +218,28 @@ input::placeholder {
 /* Footer section */
 footer {
     background-color: #828282;
-    color: rgb(0, 0, 0);
+    color: #222;;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
-footer h3 {
-    font-size: 2.2rem;
-    color: black;
+/* Remove footer h3 background-color */
+.footer h3 {
+    padding-bottom: 0;
+}
+
+.social-networks {
     background-color: #828282;
+    text-align: center;
+    padding: 0;
+}
+
+.social-networks>li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 200%;
+    padding: 1%;
+    color: #222;
 }
