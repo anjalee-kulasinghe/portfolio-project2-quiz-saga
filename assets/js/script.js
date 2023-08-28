@@ -10,36 +10,8 @@ let questions = [
             {text: "Mars", correct:false},            
         ]
     },
-    /* question 2 */
-    {
-        question: "From what grain is the Japanese spirit Sake made?",
-        answers: [
-            {text: "Barley", correct:false},
-            {text: "Couscous", correct:false},
-            {text: "Rice", correct:true},
-            {text: "Bulgur wheat", correct:false},            
-        ]
-    },
-    /* question 3 */
-    {
-        question: "What is the capital of New Zealand?",
-        answers: [
-            {text: "Auckland", correct:false},
-            {text: "Wellington", correct:true},
-            {text: "Queenstown", correct:false},
-            {text: "Christchurch", correct:false},            
-        ]
-    },
-    /* question 4 */
-    {
-        question: "What element is denoted by the chemical symbol Sn in the periodic table?",
-        answers: [
-            {text: "Nickel", correct:false},
-            {text: "Antimony", correct:false},
-            {text: "Silicon", correct:false},
-            {text: "Tin", correct:true},            
-        ]
-    },
+    // ... other questions ...
+
     /* question 5 */
     {
         question: "What was the most popular girls name in the UK in 2021?",
@@ -49,9 +21,9 @@ let questions = [
             {text: "Isabella", correct:false},
             {text: "Lily", correct:false},            
         ]
-    };
-     /* question 6 */
-     {
+    },
+    /* question 6 */
+    {
         question: "What country has the highest life expectancy?",
         answers: [
             {text: "Japan", correct:false},
@@ -59,7 +31,8 @@ let questions = [
             {text: "South Korea", correct:false},
             {text: "China", correct:false},            
         ]
-    };
+    },
+
     /* question 7 */
     {
         question: "Who was the Ancient Greek God of the Sun?",
@@ -69,7 +42,7 @@ let questions = [
             {text: "Apollo", correct:true},
             {text: "Artemis", correct:false},            
         ]
-    };
+    },
     /* question 8 */
     {
         question: "What year was the United Nations established? ",
@@ -79,7 +52,7 @@ let questions = [
             {text: "1948", correct:false},
             {text: "1955", correct:false},            
         ]
-    };
+    },
     /* question 9 */
     {
         question: "Who has won the most total Academy Awards?",
@@ -89,7 +62,7 @@ let questions = [
             {text: "Katharine Hepburn", correct:false},
             {text: "Walt Disney", correct:true},            
         ]
-    };
+    },
     /* question 10 */
     {
         question: 'What company was originally called "Cadabra"?',
@@ -99,7 +72,7 @@ let questions = [
             {text: "Target", correct:false},
             {text: "eBay", correct:false},            
         ]
-    };
+    },
     /* question 11 */
     {
         question: "How many elements are in the periodic table?",
@@ -109,7 +82,7 @@ let questions = [
             {text: "116", correct:false},
             {text: "118", correct:true},            
         ]
-    };
+    },
     /* question 12 */
     {
         question: "How many ghosts chase Pac-Man at the start of each game?",
@@ -119,7 +92,7 @@ let questions = [
             {text: "6", correct:false},
             {text: "1", correct:false},            
         ]
-    };
+    },
     /* question 13 */
     {
         question: "What country drinks the most coffee per capita?",
@@ -129,7 +102,7 @@ let questions = [
             {text: "Finland", correct:true},
             {text: "Norway", correct:false},            
         ]
-    };
+    },
     /* question 14 */
     {
         question: 'What company was initially known as "Blue Ribbon Sports"?',
@@ -139,7 +112,7 @@ let questions = [
             {text: "Reebok", correct:false},
             {text: "Nike", correct:true},            
         ]
-    };
+    },
     /* question 15 */
     {
         question: "What sports car company manufactures the 911?",
@@ -150,8 +123,7 @@ let questions = [
             {text: "McLaren", correct:false},            
         ]
     }
-
-]; //array end here
+]; // array end here
 // --------------------------------------------------------------------------------------------------------------------------
 
 let quizElement = document.getElementById("question");
@@ -185,8 +157,6 @@ function startQuiz() {
     showQuestion();
 }
 
-
-
 /**
  * Take the question and the answer from the questions array and give a nuber to the question.
  */
@@ -213,6 +183,20 @@ function  showQuestion() {
         progressBarFull.style.width = `${(questionNumber/questions.length) * 100}%`
     });
 }
+
+/**
+* Shuffles the array randomly and  
+* give 5 questions to the users
+*/
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
 
 /**
 *re-set the answers area
