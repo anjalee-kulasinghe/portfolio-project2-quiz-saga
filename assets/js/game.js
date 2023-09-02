@@ -316,6 +316,9 @@ function showScore(){
         displayTotalTimeTaken();
     } else {
         homeButton.style.display = "none";
+        // Hide the Total Time Taken element when the game restarts
+        let totalTimeTakenElement = document.getElementById("totalTimeTaken");
+        totalTimeTakenElement.setAttribute("hidden", "true");
     }
 }
 
