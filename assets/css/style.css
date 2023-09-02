@@ -19,6 +19,30 @@ body {
     padding-bottom: 1rem;
 }
 
+/* index page */
+/* ------------------------------------------------------------------- user section */
+#userName {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    width: 30rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+#headingText {
+    text-align: center;
+}
+
+.user-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*  ------------------------------------------------------------------- */
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -76,7 +100,8 @@ body {
     box-shadow: none;
     transform: none;
 }
-/* -------------------------------------------------------------------   Modal */
+
+/* ------------------------------------------------------------------- Modal */
 /* Modal button */
 .modal {
     display: none; 
@@ -128,23 +153,11 @@ body {
     cursor: pointer;
   }
 
-  
-
-/*-----------------------------------------------------------------------------*/
-/* User section */
-#userName{
-    font-size: 2.4rem;
-    padding: 2rem 0;
-    width: 30rem;
-    text-align: center;
-    margin-bottom: 1rem;
-    border-radius: 4px;
-}
-
+/*====================================================================================================================*/
 
 /* game page */
 
-/* -------------------------------------------------------------------  Heads Up Display */
+/* ------------------------------------------------------------------- Heads Up Display */
 #hud {
     display: flex;
     justify-content: space-between;
@@ -158,7 +171,7 @@ body {
 .head-main-text {
     text-align: center;
 }
-/* count down-----------------------------------*/
+/* ------------------------------------------------------------------- countdown timer*/
 .timer-text {
     text-align: center;
     font-family: 'Bree Seri', sans-serif;
@@ -182,6 +195,7 @@ body {
     font-weight: 600
 }
 
+/* ------------------------------------------------------------------- questions progress bar*/
 #progressBar {
     width: 8rem;
     height: 1rem;
@@ -211,6 +225,7 @@ body {
     padding: 20px 0;
 }
 
+/* ------------------------------------------------------------------- four answers area */
 .gameAnswer {
     background-color: #fff;
     color: #222;
@@ -248,7 +263,7 @@ body {
     font-size: 1.4rem;
 }
 
-/*-------------------------------------------------------------------  Add background color for correct and incorrect answers */
+/* ------------------------------------------------------------------- Add background color for correct and incorrect answers */
 .correct {
     background-color: lightgreen;
 }
@@ -257,7 +272,7 @@ body {
     background-color: lightcoral;
 }
 
-/* End page*/
+/* ------------------------------------------------------------------- end page of the quiz*/
 .end-form-container {
     width: 100%;
     display: flex;
@@ -278,12 +293,6 @@ input::placeholder {
     color: #D9DDDC;
 }
 
-#userName {
-    margin-bottom: 3rem;
-    width: 100%;
-    outline: none;
-}
-
 #saveScore {
     border: none;
 }
@@ -294,7 +303,7 @@ input::placeholder {
     text-align: center;
 }
 
-/*-------------------------------------------------------------------  footer */
+/* ------------------------------------------------------------------- footer area */
 footer {
     background-color: #29abe2;
     padding: 1em;

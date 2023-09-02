@@ -6,8 +6,17 @@ let userPage = document.querySelector("#userPage");
  */
 function greetings() {
     headingText.innerHTML = "";
-    headingText.innerHTML = "Hello " + userName.value + ". Select the 'Start the quiz' to play the quiz. Click the 'How to Play' to read the instructions.";
+    headingText.innerHTML = "Hello " + userName.value + ".<br><br>" +
+    "Select the 'Start the quiz' to play the quiz.<br>" +
+    "Click the 'How to Play' to read the instructions.";
+    headingText.style.textAlign = "center";
     userPage.style.display = "none";
+
+    // Display the hidden buttons
+    let startButton = document.querySelector('a[href="game.html"]');
+    let howToPlayButton = document.getElementById("myBtn");
+    startButton.removeAttribute("hidden");
+    howToPlayButton.removeAttribute("hidden");
 }
 
 //Code for the Modal
