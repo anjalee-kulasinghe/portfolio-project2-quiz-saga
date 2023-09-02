@@ -16,21 +16,21 @@
 <body>
     <div class="container">
         <div id="home" class="flex-column flex-center">
-            <img src="assets/images/QuizSaga_Logo.png" alt="QuizSaga_Logo" class="logo"> <br>
+            <img src="assets/images/QuizSaga_Logo.png" alt="QuizSaga_Logo" class="logo" width="200" height="200"> <br>
             <h1 class="heding1">Welcome to Quiz Saga</h1>
             <h2 class="heding2">Unlock Your Knowledge with Quiz Saga</h2>
 
             <!-- start of the user section -->
             <section class="welcome-section"> <br>
-                <h2 id="headingText">Enter your username:</h2>
+                <h2 id="headingText">Enter your user name:</h2>
                 <div id="userPage" class="user-page">
-                    <input type="text" id="userName"> <br>
+                    <input type="text" id="userName" placeholder="Type the user name"> <br>
                     <button onclick="greetings()" class="btn">Submit</button>
                 </div>
             </section>
             <!-- End of the user section -->
             <br>
-            <a href="game.html" class="btn" hidden>Start the quiz</a> <br>
+            <a href="game.html" class="btn" hidden aria-label="Play the quiz game">Start the quiz</a> <br>
             <button id="myBtn" class="btn" hidden>How to Play</button>
             <!-- Trigger/Open The Modal -->
             
@@ -54,16 +54,16 @@
     </div>
 
 <!-- footer section start -->
-<footer class="text-uppercase">
+<footer>
     <!-- social media links -->
     <div>
         <ul class="social-networks">
-            <li><a href="https://www.linkedin.com/in/anjalee-kulasinghe/" target="_blank"><i
+            <li><a href="https://www.linkedin.com/in/anjalee-kulasinghe/" target="_blank" aria-label="Link with the LinkedIn page"><i
                         class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://www.facebook.com/anjalee.kulasinghe" target="_blank"><i
+            <li><a href="https://www.facebook.com/anjalee.kulasinghe" target="_blank" aria-label="Link with the Facebook page"><i
                         class="fab fa-facebook"></i></a>
             </li>
-            <li><a href="https://www.instagram.com/anji_kulasinghe/" target="_blank"><i
+            <li><a href="https://www.instagram.com/anji_kulasinghe/" target="_blank" aria-label="Link with the Instagram page"><i
                         class="fab fa-instagram"></i></a>
             </li>
         </ul>

@@ -84,7 +84,7 @@ body {
     text-align: center;
     text-decoration: none;
     color: white;
-    background: #29abe2;
+    background: #007acc;
     border-radius: 4px;
 }
 
@@ -227,7 +227,7 @@ body {
 
 /* ------------------------------------------------------------------- four answers area */
 .gameAnswer {
-    background-color: #fff;
+    background-color: #f9f8f6;
     color: #222;
     width: 100%;
     border: 1px solid #222;
@@ -243,7 +243,7 @@ body {
 
 .gameAnswer:hover:not([disabled]) {
     background-color: #222;
-    color: #fff;
+    color: #f9f8f6;
 }
 
 .gameAnswer:disabled {
@@ -252,7 +252,7 @@ body {
 
 #btnNext, #btnHome {
     background-color: #000000;
-    color: #fff;
+    color: #f9f8f6;
     border: 0;
     width: 150px;
     padding: 10px;
@@ -305,13 +305,13 @@ input::placeholder {
 
 /* ------------------------------------------------------------------- footer area */
 footer {
-    background-color: #29abe2;
+    background-color: #007acc;
     padding: 1em;
     text-align: center;
-    width: auto;
+    /* width: auto;
     bottom: 0;
     right: 0;
-    z-index: 3;
+    z-index: 3; */
     clear: both;
     overflow: auto;
 }
@@ -319,10 +319,6 @@ footer {
 footer>p {
     color: #f9f8f6;
     font-weight: 900;
-}
-
-.text-uppercase {
-    text-transform: uppercase;
 }
 
 .social-networks {
