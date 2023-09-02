@@ -152,10 +152,10 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
-
+    
     // Take the first 5 questions from the shuffled array
     selectedQuestions = questions.slice(0, 5);
-
+    
     showQuestion();
 
     // Hide the "Go to Start" button
@@ -237,12 +237,9 @@ function selectAnswer(e){
         }
         button.disabled = true; //disable selecting another answer
     });
-
+    
     /* let the next button appear to the user */
     nextButton.style.display = "block";
-
-    /* Stop the timer */
-    clearInterval(timer);
 }
 
 /**
@@ -253,13 +250,13 @@ function startTimer(seconds) {
     timer = setInterval(function () {
         // Update the timer display
         document.getElementById("time-left").textContent = timeLeft;
-
+        
         if (timeLeft <= 0) {
             clearInterval(timer); // Stop the timer when it reaches 0
             handleNextButton(); // Automatically move to the next question
         }
         timeLeft--;
-    }, 1000);
+    }, 1000); // 1000 milliseconds = 1 second
 }
 
 /**
@@ -290,7 +287,7 @@ function showScore(){
     } else {
         homeButton.style.display = "none";
     }
-
+    
     homeButton.addEventListener("click", function() {
         // Redirect the user to the home page
         window.location.assign("/index.html");
@@ -316,3 +313,4 @@ document.addEventListener("keydown", function(event) {
 });
 
 startQuiz();
+/* ------------------------------------------------------------------------*/
