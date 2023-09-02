@@ -1,4 +1,4 @@
-// Adding questions and answers
+// Adding questions and answers to an array
 let questions = [
     /* question 1 */
     {
@@ -137,13 +137,15 @@ let selectedQuestions = [];
 // Shuffle the questions array to randomize the order
 questions = shuffleArray(questions);
 
+//variables for the total score and for the question progress bar
 let scoreText = document.querySelector("#score");
 let progressBarFull = document.querySelector("#progressBarFull");
 
-/* variables to store the question index and the score */
+//variables to store the question index, score, start timer and the countdown timer
 let currentQuestionIndex = 0;
 let score = 0;
-let timer;
+let timer; // Variable to store the countdown time
+let startTime; 
 
 /**
  * Start of the quiz.
@@ -152,27 +154,30 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
-    
+
     // Take the first 5 questions from the shuffled array
     selectedQuestions = questions.slice(0, 5);
-    
-    showQuestion();
 
-    // Hide the "Go to Start" button
+    // Record the start time
+    startTime = new Date();
+
+    // Start the timer when the quiz begins
+    startTimer(10);
+
+    // Hide the "Go to Start" button initially
     homeButton.style.display = "none";
+
+    showQuestion();
 }
 
 /**
  * Take the question and the answer from the questions array and give a nuber to the question.
  */
 function  showQuestion() {
-    resetState(); 
+    resetState();
     let currentQuestion = selectedQuestions[currentQuestionIndex];
     let questionNumber = currentQuestionIndex + 1;
     quizElement.innerHTML = questionNumber + ". " + currentQuestion.question;
-
-    // Start the timer
-    startTimer(10); // 10 seconds timer
 
     progressText.innerHTML = `Question ${questionNumber} of ${selectedQuestions.length}`;
     progressBarFull.style.width = `${(questionNumber / selectedQuestions.length) * 100}%`
@@ -183,18 +188,21 @@ function  showQuestion() {
         button.classList.add("gameAnswer");
         answerElements.appendChild(button);
 
-        /* assign the true or false */
-        if(answer.correct){
+        // assign the true or false
+        if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
 
         button.addEventListener("click", selectAnswer);
     });
+
+    // Start the timer after the question is displayed
+    startTimer(10);
 }
 
 /**
 * Shuffles the array randomly and  
-* give 5 questions to the users
+* give 5 questions to the player
 */
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -204,9 +212,8 @@ function shuffleArray(array) {
     return array;
 }
 
-
 /**
-*re-set the answers area
+* Re-set the answers area
 */
 function resetState() {
     nextButton.style.display = "none";
@@ -230,7 +237,7 @@ function selectAnswer(e){
         selectedAnswer.classList.add("incorrect");
     }
 
-    /* let the user allow only to select one answer. if the answer is incorrect highligt the correct answer*/
+    // Let the layer allow only to select one answer. If the answer is incorrect highligt the correct answer
     Array.from(answerElements.children).forEach(button => {
         if(button.dataset.correct === "true") {
             button.classList.add("correct");
@@ -238,22 +245,22 @@ function selectAnswer(e){
         button.disabled = true; //disable selecting another answer
     });
     
-    /* let the next button appear to the user */
+    // Next button appear to the player
     nextButton.style.display = "block";
 
-    /* Stop the timer */
-    clearInterval(timer);
+    clearInterval(timer); // Stop the timer after giving an answer
 }
 
 /**
  * start the countdown timer
  */
 function startTimer(seconds) {
+    clearInterval(timer); // Clear any existing timers
     let timeLeft = seconds;
     timer = setInterval(function () {
         // Update the timer display
         document.getElementById("time-left").textContent = timeLeft;
-        
+
         if (timeLeft <= 0) {
             clearInterval(timer); // Stop the timer when it reaches 0
             handleNextButton(); // Automatically move to the next question
@@ -263,8 +270,25 @@ function startTimer(seconds) {
 }
 
 /**
- * check whether there is a next question 
- * if not display the score of the user
+ * Display the total time taken to answer the 5 questions.
+ */
+function displayTotalTimeTaken() {
+    // Calculate the time difference
+    let endTime = new Date();
+    let timeDifference = (endTime - startTime) / 1000;
+
+    // Round up the time to the nearest whole number of seconds
+    let roundedTime = Math.ceil(timeDifference);
+
+    // Update the total time taken element
+    let totalTimeTakenElement = document.getElementById("totalTimeTaken");
+    totalTimeTakenElement.textContent = `You took: ${roundedTime} seconds`;
+    totalTimeTakenElement.removeAttribute("hidden");
+}
+
+/**
+ * Check whether there is a next question 
+ * If not display the score of the player
  */
 function handleNextButton(){
     clearInterval(timer);
@@ -277,7 +301,7 @@ function handleNextButton(){
 }
 
 /**
- * will display the final score of the user
+ * will display the final score and the total time taken by the 
  */
 function showScore(){
     resetState();
@@ -286,16 +310,22 @@ function showScore(){
     nextButton.style.display = "block";
 
     if (currentQuestionIndex === selectedQuestions.length) {
+        // Display the "GO TO START" button only at the end of the quiz
         homeButton.style.display = "block";
+        // Show the Total Time Taken element when the quiz is completed
+        displayTotalTimeTaken();
     } else {
         homeButton.style.display = "none";
     }
-    
-    homeButton.addEventListener("click", function() {
-        // Redirect the user to the home page
-        window.location.assign("/index.html");
-    });
 }
+
+/*Define the Go to start button accion */
+function handleGoToStartButton() {
+    // Redirect to the index.html page
+    window.location.href = "index.html";
+}
+
+homeButton.addEventListener("click", handleGoToStartButton);
 
 /* Define the next button actions */
 function handleQuizAction() {
@@ -315,4 +345,5 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
+// Start the quiz initially
 startQuiz();
