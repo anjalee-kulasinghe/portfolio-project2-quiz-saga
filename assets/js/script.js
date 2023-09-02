@@ -1,3 +1,25 @@
+//Code for the Modal
+document.addEventListener("DOMContentLoaded", function() {
+    let modal = document.getElementById("myModal");
+    let btn = document.getElementById("myBtn");
+    let span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+});
+
 // Adding questions and answers
 let questions = [
     /* question 1 */
@@ -184,6 +206,7 @@ function  showQuestion() {
         progressBarFull.style.width = `${(questionNumber/questions.length) * 100}%`
     });
 }
+
 
 /**
 * Shuffles the array randomly and  

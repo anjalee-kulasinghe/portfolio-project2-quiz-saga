@@ -16,30 +16,30 @@
 <body>
     <div class="container">
         <div id="home" class="flex-column flex-center">
+            <img src="assets/images/QuizSaga_Logo.png" alt="QuizSaga_Logo" class="logo"> <br>
             <h1 class="heding1">Welcome to Quiz Saga</h1>
             <h2 class="heding2">Unlock Your Knowledge with Quiz Saga</h2>
             <a href="game.html" class="btn">Start the quiz</a> <br>
-            <a href="" class="btn">How to Play</a>
-            <!-- <a href="/highscores.html" class="btn" id="highScore">High Score</a> -->
+            <button id="myBtn" class="btn">How to Play</button>
+            <!-- Trigger/Open The Modal -->
+            
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p class="modal-heading">Quiz Instruction</p> <br>
+                    <p>1. You will have 5 questions for each quiz</p> <br>
+                    <p>2. There is only ONE correct answer out of 4</p> <br>
+                    <p>3. Once an answer is selected, you cannot select a different one.</p> <br>
+                    <p>4. Correct answer is showing in Green and Wrong answer in Red.</p> <br>
+                    <p>5. If you select the Wrong answer the correct answer will showing in Green.</p> <br>
+                    <p>6. Next button will apper after you select an answer</p> <br>
+                    <p>7. On top of the quiz area you can see the Score you got and the Which question you are answering</p>
+                </div>
+            </div>   
         </div>
     </div>
-    <!-- footer section start -->
-    <!-- <footer>
-        <div>
-            <ul class="social-networks">
-                <li><a href="https://www.linkedin.com/in/anjalee-kulasinghe/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a></li>
-                <li><a href="https://www.facebook.com/anjalee.kulasinghe" target="_blank"><i
-                            class="fab fa-facebook"></i></a>
-                </li>
-                <li><a href="https://www.instagram.com/anji_kulasinghe/" target="_blank"><i
-                            class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
-        </div>
-        <br>
-            <h3 class="heding3">Copyright © by Anjalee Kulasinghe 2023</h3>
-    </footer> -->
 
 <!-- footer section start -->
 <footer class="text-uppercase">
@@ -60,13 +60,13 @@
     <p>Copyright © by Anjalee Kulasinghe 2023</p>
 </footer>
 
-
-
-
     <!-- footer section end -->
     <!-- ================================================================================================== -->
 
      <!-- adding font awesome script -->
      <script src="https://kit.fontawesome.com/5f838da39b.js" crossorigin="anonymous"></script>
+
+    <!-- link to the javascript file -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

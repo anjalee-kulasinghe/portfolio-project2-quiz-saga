@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lato:wght@300&display=swap');
 
 * {
-    background-color:azure;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color:#f9f8f6;
     font-family: 'Lato', cursive;
 }
 
@@ -37,7 +40,6 @@
     justify-content: center;
 }
 
-/* extra */
 .justify-center {
     justify-content: center;
 }
@@ -58,7 +60,7 @@
     text-align: center;
     text-decoration: none;
     color: white;
-    background: skyblue;
+    background: #29abe2;
     border-radius: 4px;
 }
 
@@ -74,7 +76,61 @@
     box-shadow: none;
     transform: none;
 }
+/* -------------------------------------------------------------------   Modal */
+/* Modal button */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 10px;
+  }
+  
+  p {
+    font-size: large;
+    font-family: 'Lato', cursive;
+  }
 
+  .modal-heading {
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+
+/*-----------------------------------------------------------------------------*/
 /* User section */
 #userName{
     font-size: 2.4rem;
@@ -88,7 +144,7 @@
 
 /* game page */
 
-/* ----------------------------------- heads up display */
+/* -------------------------------------------------------------------  Heads Up Display */
 #hud {
     display: flex;
     justify-content: space-between;
@@ -119,14 +175,13 @@
 }
 
 .game {
-    background-color: #fff;
     width: 90%;
     max-width: 600px;
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
     color: black;
-    background: #D9DDDC;
+    background: rgba(41,171,226,0.6);
 }
 
 .quiz {
@@ -170,7 +225,7 @@
     font-size: 1.4rem;
 }
 
-/*------------------add background color for correct and incorrect answers */
+/*-------------------------------------------------------------------  Add background color for correct and incorrect answers */
 .correct {
     background-color: lightgreen;
 }
@@ -216,40 +271,9 @@ input::placeholder {
     text-align: center;
 }
 
-/* Footer section */
-/* footer {
-    background-color: #828282;
-    color: #222;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.social-networks {
-    background-color: #828282;
-    text-align: center;
-    padding: 0;
-}
-
-.social-networks>li {
-    display: inline;
-}
-
-.social-networks i {
-    font-size: 200%;
-    padding: 1%;
-    color: #222;
-}
-
-.heding3 {
-    padding-bottom: 0;
-} */
-
-
-
-
 /*-------------------------------------------------------------------  footer */
 footer {
-    background-color: skyblue;
+    background-color: #29abe2;
     padding: 1em;
     text-align: center;
     width: auto;
@@ -261,7 +285,7 @@ footer {
 }
 
 footer>p {
-    color: #222;
+    color: #f9f8f6;
     font-weight: 900;
 }
 
@@ -281,5 +305,5 @@ footer>p {
 .social-networks i {
     font-size: 200%;
     padding: 1%;
-    color: #222;
+    color: #f9f8f6;
 }
