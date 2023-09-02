@@ -34,25 +34,27 @@ Quiz Saga is a multiple-choice online game that is engaging and educational. Pla
 
 ## Demo
 
-![Website look on different devices](./assets/readme-assets/device_look.PNG)
+![Website look on different devices](assets/readme-assets/device_look.PNG)
 
-### A live demo to the website can be found [here](https://anjalee-kulasinghe.github.io/portfolio-project1-cv-website/index.html)
+### A live demo to the website can be found [here](https://anjalee-kulasinghe.github.io/portfolio-project2-quiz-saga/)
 
 
 ## UX
-There are two user groups targeted by this website. They are employers and the recruiters.
-The site is focused on simplicity and ease of navigation for the user's main focus areas on my resume.
+The users are the players who are interested in playing the quiz game. Players can be in any age group. Since Quiz Saga is a multiple-choice general knowledge game, players can improve their general knowledge since the correct answer is displayed.
 
 ## User stories
-As the sole developer of this website, my goal is to secure employment opportunities in the web development area as well as other potential employment in the area of IT.
+As the sole developer of this website, my goal is to develop an online game that is engaging and educational. Players can test their knowledge in different areas while having fun.
 I came up with the following points, which are applicable to the users:
 
 - As a user, I want to understand the purpose of this website quickly and easily.
 - As a user, I want to easily navigate this website (by using a mouse, a keyboard, or a touch screen).
-- As a user, I want to view this candidate's work and education history and skills.
-- As a user, I want to know what technical languages and tools this candidate is able to work in, as well as the candidate's language proficiency.
-- As a user, I want a way to contact this candidate.
-- As a user, I want to get a copy of the candidate's traditional CV.
+- As a user, I want interactive learning.
+- As a user, I want to see questions with varied topics, which will make the quiz more interesting and improve knowledge.
+- As a user, I want to have fun while learning, making the educational process enjoyable.
+- As a user, I want the game to offer challenges that keep users engaged, motivated, and eager to learn.
+- As a user, I want to receive instant feedback on their answers, helping them learn from their mistakes.
+- As a user, I want the interface to be intuitive and user-friendly, ensuring a smooth and enjoyable experience.
+- As a user, I want clear instructions on how to play the game and access resources.
 
 ### Strategy
 The goal is to make a well-functioning professional CV website. The focus was on making the design both user-friendly and creative.
