@@ -433,6 +433,13 @@ footer>p {
 
 /* ---------------------------------------------------- For screen size from 360px wide and down */
 @media screen and (max-width: 360px) {
+    .heding1,
+    .heding2,
+    .heding3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
     #userName {
         font-size: 1rem;
         padding: 0.5rem 0;
