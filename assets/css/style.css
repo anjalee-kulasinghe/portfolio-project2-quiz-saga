@@ -218,7 +218,7 @@ body {
     border-radius: 10px;
     padding: 30px;
     color: black;
-    background: rgba(41,171,226,0.6);
+    background: rgba(188,220,236,0.7);
 }
 
 .quiz {
@@ -242,7 +242,7 @@ body {
 }
 
 .gameAnswer:hover:not([disabled]) {
-    background-color: #222;
+    background-color: #1284ce;
     color: #f9f8f6;
 }
 
@@ -251,7 +251,7 @@ body {
 }
 
 #btnNext, #btnHome {
-    background-color: #000000;
+    background-color: #007acc;
     color: #f9f8f6;
     border: 0;
     width: 150px;

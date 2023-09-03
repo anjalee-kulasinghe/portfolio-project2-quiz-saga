@@ -71,26 +71,25 @@ I followed the simple layout so the interface would be user-friendly. Game instr
 3. **_Footer:_** This is not the main section of the website but rather an ending to the website with social media links and copywriting information.
 
 ### Skeleton
-The website is designed to be clear and simple. And the site has a simple tree structure with hierarchical flows from top to bottom.
+The website is designed to be clear and simple. And the site has a simple structure with hierarchical flows from top to bottom.
 
 **Wireframe**
-The wireframe is designed using Balsamiq software. The first draft was edited with the guidance of the mentor. Although the site was built as a single-page scrolling website, the wireframe was designed to focus on each and every section as a single page and connect them using the navigation.
+The wireframe is designed using Balsamiq software. The first draft was edited with the guidance of the mentor. The site was built with two main pages, and the wireframe was designed to focus on each page. The game page focuses on the single question and the result.
 
-My wireframe design in the [(pdf format)](./assets/readme-assets/wireFrame.pdf)
+My wireframe design in the [(pdf format)](assets/readme-assets/wireFrame.pdf)
 
 ### Surface
-I have selected a plain color for the main background color. But I also used a background image with bubbles in two sections. I have started the Diploma in Fullstack Development at Code Institute, which is the beginning of a new chapter of my life. The bubble background represents the meaning of change and transformation. I have selected the color theme that goes with the background image I have selected.
-
-_Background image and the colors_
-![Background image used](./assets/readme-assets/Background_Image.PNG)
+I have selected flat colors for the Quiz Saga website. The purpose of using flat colors for the website is to keep it simple, not to make the player disturbed by the background, but also to make it more user-friendly to the player.
+The main colors include shades of white and blue, along with black for the text.
 
 _Main color palette_
 
-![Main color Palette](./assets/readme-assets/Main_Color_Palette.png)
+![Main color Palette](assets/readme-assets/Main_Color_Palette.png)
 
 ## Technologies
 1. HTML - To create a basic site
 2. CSS - To create a nice, standout front-end and to give a great user experience
+3. JavaScript - 
 3. Balsamiq - To create a wireframe
 
 ## Features
