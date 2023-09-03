@@ -97,9 +97,11 @@ _Main color palette_
 * **Home**
   - Used a flat background color. Included is the logo and a message to welcome you to the Quiz Saga page.
   - There is a text box for the user to enter the user name.
-  - Submit button will guide you to the next page or section of the website.
+  - Submit button will guide you to the next page or section of the website. The player can see an Error message if they try to satrt the game without entering a User Name.
   
 ![home_section](assets/readme-assets/Home-section.PNG)
+
+![error_message](assets/readme-assets/errorMessage.PNG)
 
 
 * **Introduction**
@@ -136,7 +138,7 @@ _Main color palette_
   - _Go to Start:_ Go to the start page, where users can start the game as new users.
 
 
-![End of qize](assets/readme-assets/endQuiz.png)
+![End of qize](assets/readme-assets/endQuiz.PNG)
 
 
 - **Footer**
@@ -162,8 +164,7 @@ In the future,
 
 ### Validator Testing
 * **HTML**
-  No errors were returned when passing through the official [W3C validator](assets/readme-assets/indexPage_validator_result_html.PNG)
-  (assets/readme-assets/gamePage_validator_result_html.PNG)
+  No errors were returned when passing through the official [W3C validator for index page](assets/readme-assets/indexPage_validator_result_html.PNG) as well as for the [W3C validator for game page](assets/readme-assets/gamePage_validator_result_html.PNG)
 
 * **CSS**
   No errors were found when passing through the official [(Jigsaw) validator](assets/readme-assets/css-validator_result.PNG)
