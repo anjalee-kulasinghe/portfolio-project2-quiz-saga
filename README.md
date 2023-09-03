@@ -179,7 +179,7 @@ In the future,
         `<link rel="stylesheet" href="./assets/css/style.css">` 
   * After removing './' to the start of the file path fixed the problem.
         `<link rel="stylesheet" href="assets/css/style.css">`
-  * When I was inspecting the code in the console tab, I saw the error `Uncaught TypeError: Cannot set properties of null (setting 'onclick')`. With the help of the tutor support team, I separated the script related to the index page and the script related to the game page into two different script pages.
+  * When I was inspecting the code in the console tab, I saw the error `Uncaught TypeError: Cannot set properties of null (setting 'onclick')`. With the help of the Tutor Assistance team, I separated the script related to the index page and the script related to the game page into two different script pages.
   * When I validated the input field, the submit button did not call the greeting function. In the submit button variable I created, I was calling the In the submit button variable I created, I was calling the `querySelector("btn-submit")`. I have to change the .btn-submit to #userName to make the greetings() function work properly.
         `let submitButton = document.querySelector("#userName");`
   * When I was doing the modification to the script file related to the game, it did not collect the questions and answers from the array. The problem was overwriting the original array every time  started the quiz. To fix the problem, I had to store the randomly selected five questions in a separate array called `selectedQuestions`.
@@ -213,5 +213,5 @@ The logo was created with the help of the website [FreeLogoDesign](https://www.f
 
 ### Acknowledgements
 * Inspirational support from [Trivia_Quiz](https://constantinadrian.github.io/Trivia_Quiz/index.html#categories) project.
-* The the Code Institute c for helping me with the correct guidance.
+* The the Code Institute Tutor Assistance for helping me with the correct guidance.
 * Last but not least, my mentor, Medale Oluwafemi, for his invaluable guidance.
