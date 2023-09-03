@@ -256,6 +256,7 @@ function startTimer(seconds) {
         }
         timeLeft--;
     }, 1000); 
+}
 
 /**
  * check whether there is a next question 
