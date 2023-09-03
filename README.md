@@ -183,7 +183,7 @@ In the future,
   * When I validated the input field, the submit button did not call the greeting function. In the submit button variable I created, I was calling the In the submit button variable I created, I was calling the `querySelector("btn-submit")`. I have to change the .btn-submit to #userName to make the greetings() function work properly.
         `let submitButton = document.querySelector("#userName");`
   * When I was doing the modification to the script file related to the game, it did not collect the questions and answers from the array. The problem was overwriting the original array every time  started the quiz. To fix the problem, I had to store the randomly selected five questions in a separate array called `selectedQuestions`.
-  * Countdown timer did not stop when the user selected an answer. I added `clearInterval` to clear the timer when the player selects an answer and to ensure that the timer stops in that case. 
+  * Countdown timer did not stop when the user selected an answer. I added `clearInterval` to clear the timer when the player selects an answer and to ensure that the timer stops in that case. 
 
   
   
@@ -205,9 +205,12 @@ When I checked my site on a Samsung Galaxy S23 Ultra with the Samsung browser, I
 
 ## Credits
 ### Content
-* The progress bar code was taken from [WeiChiaChang](<https://gist.github.com/WeiChiaChang/abe92ca2e8da86ef69560b63903e8764>).
-* The code for the Modal [layout](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive) and [fixed navigation](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive) from www.w3schools.com.
-- To add the overlay to the home page, I took the idea from the [dcode](https://www.youtube.com/watch?v=exb2ab72Xhs) YouTude vedio.
+* The greeting message with the user name given idea and part for the code was taken from [Keith Paterson](https://www.youtube.com/watch?v=79WRPIknVHs&list=PLuumbB6r824HbAiVGGK_s3lcFsqmG9VyL&index=2).
+* The code for [How TO - CSS/JS Modal](https://www.w3schools.com/howto/howto_css_modals.asp) from www.w3schools.com.
+* To add the progress bar and the score at the top of the quiz window, I took the idea from the [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY) YouTude vedio.
+* To hide the Next button until the user give an aswer and highlight the correct answer when the wrong answer is select, I took the idea and the code from the [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&list=PLuumbB6r824HbAiVGGK_s3lcFsqmG9VyL&index=3) YouTude vedio.
+* For the timer, I took the idea from the [Invention Tricks](https://www.youtube.com/watch?v=WHHYz8rZmDU&list=PLuumbB6r824HbAiVGGK_s3lcFsqmG9VyL&index=4) YouTude vedio.
+* To get five random questions from a given list of question array in javeScript, I took the idea from the [Stackoverflow](https://stackoverflow.com/questions/75044463/get-5-random-questions-from-a-list-of-10-in-js) website.
 * The questions are taken from [Mentimeter](https://www.mentimeter.com/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates#general-knowledge) and [Radiotimes](https://www.radiotimes.com/tv/tv-listings/) websites.
 
 ### Media
@@ -216,4 +219,4 @@ The logo was created with the help of the website [FreeLogoDesign].
 ### Acknowledgements
 * Inspirational support from [Trivia_Quiz](https://constantinadrian.github.io/Trivia_Quiz/index.html#categories) project.
 * The the Code Institute c for helping me with the correct guidance.
-* Last but not the least, my mentor, Medale Oluwafemi, for his invaluable guidance.
+* Last but not least, my mentor, Medale Oluwafemi, for his invaluable guidance.
