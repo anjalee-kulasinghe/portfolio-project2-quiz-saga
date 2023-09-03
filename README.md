@@ -7,8 +7,6 @@ This website was developed to showcase my ability to design and create a static 
 Quiz Saga is a multiple-choice online game that is engaging and educational. Players can test their knowledge in different areas while having fun. 
 
 # Table of Contents
-- [Anjalee Kulasinghe Online CV](#anjalee-kulasinghe-online-cv)
-  - [Code Institute - First Milestone Project: User Centric Frontend Development.](#code-institute---first-milestone-project-user-centric-frontend-development)
 - [Table of Contents](#table-of-contents)
   - [Demo](#demo)
     - [A live demo to the website can be found here](#a-live-demo-to-the-website-can-be-found-here)
