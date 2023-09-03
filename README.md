@@ -87,72 +87,70 @@ _Main color palette_
 ![Main color Palette](assets/readme-assets/Main_Color_Palette.png)
 
 ## Technologies
-1. HTML - To create a basic site
-2. CSS - To create a nice, standout front-end and to give a great user experience
-3. JavaScript - 
-3. Balsamiq - To create a wireframe
+1. HTML - To create a basic site.
+2. CSS - To create a nice, standout front-end and to give a great user experience.
+3. JavaScript - To enabling the creation of dynamic, interactive, and feature-rich websites. 
+4. Balsamiq - To create a wireframe.
 
 ## Features
 ### Existing Features
-* **Navigation Bar**
-  * The navigation bar is at the top of the page, and it is fixed to the top. The logo is in the left-hand corner of the navigation, and it links to the index.html page. 
-  * The other navigation links on the website are to the right. Home, Experience, Education, Skills, and Contact connect to different sections of the same page. Download CV is a link embedded in a pdf that will download the traditional CV to the device on which the website is open.
-  * The font color is in contrast with the navigation background color. The hover effect is used for navigation, so the user can know which page they are on. 
-  * The different sections of the navigation are under the same heading as a traditional CV. Users can easily understand what information is contained in different sections.
-
-![navigation_bar](./assets/readme-assets/navigation.PNG)
-
-
 * **Home**
-  - As the background image, an image of me (Anjalee Kulasinghe) has been used. On top of the image, I have used a flat color overlay with opacity.
-  - There is a brief introduction to Anjalee Kulasinghe (me) with a simple animation used to give a welcome to the site.
+  - Used a flat background color. Included is the logo and a message to welcome you to the Quiz Saga page.
+  - There is a text box for the user to enter the user name.
+  - Submit button will guide you to the next page or section of the website.
   
-![home_section](./assets/readme-assets/Home-section.PNG)
+![home_section](assets/readme-assets/Home-section.PNG)
 
 
-* **Experience**
-  * In the Experience section, the current and past work experience.
-  * This section is displayed in reverse chronological order, starting with the current job and going back to the oldest experience.
-
-![experience_section](./assets/readme-assets/Experience-section.png)
-
-
-- **Education**
-  * In the Education section, showcase my (Anjalee Kulasinghe) educational background.
-  * This section is displayed in reverse chronological order.
-
-![education_section](./assets/readme-assets/Education-section.PNG)
+* **Introduction**
+  - In the introduction section, on the top logo, the same welcome message is displayed.
+  - Below the welcome message, a greeting to the player is given with the user name entered by the player.
+  - Below the greeting message, the purpose of the two buttons on the screen is explained to the user.
+  - Start the quiz: will direct the player to the quiz.
+  - How to play: give the user quiz instructions. How to play the quiz
 
 
-- **Skills**
-  - In this section, information is focused on four categories.
-  - _Expertise:_ skills that I have learned during the past few years by working in different industries and jobs. I believe that these top few skills that I have listed will help me as a developer in the field of IT.
-  - _Language skills (human):_ these are the languages that I am able to use for communication (read, write, and speak).
-  - _Tools:_ some technological tools that I am familiar with.
-  - _Tech Languages:_ these are some tech languages that I have some basic understanding of and have started to learn deeper with the Code Institute.
-
-![skills_section](./assets/readme-assets/Skills-section.png)
+![Introduction_section](assets/readme-assets/Introduction_page.PNG)
 
 
-- **Contact**
-  - In the Contact Me section, give the user the main contact details that they can use to reach me (Anjalee Kulasinghe). This section is divided into two main sections.
-  - On the left-hand side, there is a picture of me, which will help the user remember who I am if they see me in an interview. Below the profile image, my name (first and last names), what positions I am currently capable of, my email address, my mobile number and my postal address are listed. 
-  - On the left-hand side, a form is given where the users will have the ability to contact me directly by entering their name and email address along with a message. The user will be asked to include their first name, last name, email, and message. The submit and reset buttons are placed at the end of the form.
+![How to play_Button](assets/readme-assets/Quiz_Instruction.PNG)
 
-![contact_section](./assets/readme-assets/Contact-section.PNG)
+- **Start the quiz**
+  - In the quiz section, on the top left side, the question progress bar is displayed. In the middle, the player's current score and the right timer for each question are given. The timer is set to 10 seconds.
+  - Below the header area, a question is displayed along with the four answer choices. The player is allowed to select only one answer. After selecting the answer, the Next button will be displayed to the user.
+  - Correct answer will be highlighted in green.
+  - If the user selects the wrong answer, the wrong answer is highlighted in red, and at the same time, the correct answer is highlighted in green.
+  - When the user selects an answer, the select option will be disabled. Accordingly, the question progress bar and the score will change, and the timer will reset to the next question.
+  - If the user does not select an answer, it will automatically direct the player to the next question.
+
+![Quiz_start](assets/readme-assets/quiz_window.PNG)
+
+![Select_correct_answer](assets/readme-assets/correct.PNG)
+
+![Select_wrong_answer](assets/readme-assets/wrong.PNG)
+
+
+- **End the quiz**
+  - At the end of the game, the player can see the total score he or she has scored and two buttons.
+  - _Play again:_ Direct the player to play the quiz again. Will provide five new questions for the user.
+  - _Go to Start:_ Go to the start page, where users can start the game as new users.
+
+
+![End of qize](assets/readme-assets/endQuiz.png)
 
 
 - **Footer**
-  - This section includes the social media links through which users can reach me. Below is copywriting information for the Online CV website of Anjalee Kulasinghe.
+  - This section includes the social media links through which players can reach me. Below is copywriting information for the Quiz Saga website of Anjalee Kulasinghe.
 
 ![contact_section](./assets/readme-assets/Footer.PNG)
 
 
 ### Features Left to Implement
 In the future, 
-* I would like to add the Portfolio section to the online CV, where I can add links to the websites that I have designed, along with a link to Github. If an employer is interested in my work, they can go in and have a look.
-* I would like to make the contact form functional.
-* I would like to improve the performance of the website.
+* I would like to make the quiz a little longer.
+* I would like to add the categories and let the player select the category they would like to play in.
+* I would like to give the player the total time it took them to complete the quiz.
+* I would like to develop the feature to store the scores of the players and let the players do a comparison of where they are with the score.
 
 
 ## Testing
