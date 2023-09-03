@@ -204,7 +204,6 @@ function shuffleArray(array) {
     return array;
 }
 
-
 /**
 *re-set the answers area
 */
@@ -256,8 +255,7 @@ function startTimer(seconds) {
             handleNextButton(); // Automatically move to the next question
         }
         timeLeft--;
-    }, 1000); // 1000 milliseconds = 1 second
-}
+    }, 1000); 
 
 /**
  * check whether there is a next question 
@@ -290,7 +288,7 @@ function showScore(){
     
     homeButton.addEventListener("click", function() {
         // Redirect the user to the home page
-        window.location.assign("/index.html");
+        window.location.assign("index.html");
     });
 }
 
@@ -313,4 +311,3 @@ document.addEventListener("keydown", function(event) {
 });
 
 startQuiz();
-/* ------------------------------------------------------------------------*/

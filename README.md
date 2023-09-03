@@ -185,12 +185,6 @@ In the future,
   * When I was doing the modification to the script file related to the game, it did not collect the questions and answers from the array. The problem was overwriting the original array every time  started the quiz. To fix the problem, I had to store the randomly selected five questions in a separate array called `selectedQuestions`.
   * Countdown timer did not stop when the user selected an answer. I added `clearInterval` to clear the timer when the player selects an answer and to ensure that the timer stops in that case. 
 
-  
-  
-* **Unfixed Bugs**
-
-When I checked my site on a Samsung Galaxy S23 Ultra with the Samsung browser, I found out that the navigation was not responsive properly. Even though the navigation is fixed to the top, it is sometimes hidden in the address bar. I have to pull it down when I need to use the navigation bar.
-
 
 ## Deployment
 * The site was deployed to Git Hub pages using the following steps:
@@ -208,11 +202,11 @@ When I checked my site on a Samsung Galaxy S23 Ultra with the Samsung browser, I
 * The greeting message with the user name given idea and part for the code was taken from [Keith Paterson](https://www.youtube.com/watch?v=79WRPIknVHs&list=PLuumbB6r824HbAiVGGK_s3lcFsqmG9VyL&index=2).
 * The code for [How TO - CSS/JS Modal](https://www.w3schools.com/howto/howto_css_modals.asp) from www.w3schools.com.
 * To add the progress bar and the score at the top of the quiz window, I took the idea from the [Brian Design](https://www.youtube.com/watch?v=f4fB9Xg2JEY) YouTude vedio.
-* To hide the Next button until the user give an aswer and highlight the correct answer when the wrong answer is select, I took the idea and the code from the [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&list=PLuumbB6r824HbAiVGGK_s3lcFsqmG9VyL&index=3) YouTude vedio.
+* To hide the Next button until the user gives an answer and highlight the correct answer when the wrong answer is selected, I took the idea and the code from the [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8&list=PLuumbB6r824HbAiVGGK_s3lcFsqmG9VyL&index=3) YouTude vedio.
 * For the timer, I took the idea from the [Invention Tricks](https://www.youtube.com/watch?v=WHHYz8rZmDU&list=PLuumbB6r824HbAiVGGK_s3lcFsqmG9VyL&index=4) YouTude vedio.
-* To get five random questions from a given list of question array in javeScript, I took the idea from the [Stackoverflow](https://stackoverflow.com/questions/75044463/get-5-random-questions-from-a-list-of-10-in-js) website.
+* To get five random questions from a given list of question arrays in JaveScript, I took the idea from the [Stackoverflow](https://stackoverflow.com/questions/75044463/get-5-random-questions-from-a-list-of-10-in-js) website.
 * The questions are taken from [Mentimeter](https://www.mentimeter.com/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates#general-knowledge) and [Radiotimes](https://www.radiotimes.com/tv/tv-listings/) websites.
-* The footer section code and the ReadMe file Deployment section was taken from my 1st project [Online CV](https://github.com/anjalee-kulasinghe/portfolio-project1-cv-website/tree/main).
+* The footer section code and the ReadMe file deployment section were taken from my 1st project [Online CV](https://github.com/anjalee-kulasinghe/portfolio-project1-cv-website/tree/main).
 
 ### Media
 The logo was created with the help of the website [FreeLogoDesign].
