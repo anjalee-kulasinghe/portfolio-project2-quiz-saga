@@ -157,27 +157,27 @@ In the future,
 * I tested the site, and it works in different web browsers: Chrome, Firefox, and Microsoft Edge.
 * On mobile devices, I tested the my site on a Samsung Galaxy S23 Ultra with the Samsung browser and an iPhone SE with the Safari browser.
 * I confirmed that the site is responsive and functions on different screen sizes using the devtools device toolbar.
-* I confirmed that the navigation and the sections Home, Experience, Education, Skills, and Contact are readable and easy to understand.
-* I confirmed that the form works: it requires entries in every field, only accepts an email in the email field, and both the submit and reset buttons work.
-* I confirmed that the Download CV link will download the pdf copy of the traditional CV to the device on which the site is open.
+* I confirmed that the all content are readable and easy to understand.
+* I confirmed that the buttons works: it requires entries in every field, only accepts an email in the email field, and both the submit and reset buttons work.
 
 ### Validator Testing
 * **HTML**
-  No errors were returned when passing through the official [W3C validator](./assets/readme-assets/validator_result_html.PNG)
+  No errors were returned when passing through the official [W3C validator](assets/readme-assets/indexPage_validator_result_html.PNG)
+  (assets/readme-assets/gamePage_validator_result_html.PNG)
 
 * **CSS**
-  No errors were found when passing through the official [(Jigsaw) validator](./assets/readme-assets/css-validator_result.PNG)
+  No errors were found when passing through the official [(Jigsaw) validator](assets/readme-assets/css-validator_result.PNG)
   
 * **Accessibility**
-  I confirmed that the colors and fonts chosen are easy to read and accessible by running it through [Lighthouse DevTools](./assets/readme-assets/site_accessibility.PNG)
+  I confirmed that the colors and fonts chosen are easy to read and accessible by running it through [Lighthouse DevTools](assets/readme-assets/site_accessibility.PNG)
 
 ### Bugs
 * **Solved bugs**
   * When I deployed my project to GitHub pages, I found that my project was broken; the links to the other files (CSS and images) did not work.
-  * My mentor showed me this had happened since I have used the file paths in the following way:
-        `<link rel="stylesheet" href="/assets/css/style.css">` 
-  * Adding a '.' to the start of the file path fixed the problem.
-        `<link rel="stylesheet" href="./assets/css/style.css">`
+  * I have used the file paths in the following way:
+        `<link rel="stylesheet" href="./assets/css/style.css">` 
+  * After removing './' to the start of the file path fixed the problem.
+        `<link rel="stylesheet" href="assets/css/style.css">`
 
   * When I was fixing my site to be responsive, I found out that in the 'Contact Me' section, the contact form does not go below the screen when the screen is small. 
   * This has happened since I have used `<display: flex;>`. 
@@ -203,15 +203,14 @@ When I checked my site on a Samsung Galaxy S23 Ultra with the Samsung browser, I
 ## Credits
 ### Content
 * The progress bar code was taken from [WeiChiaChang](<https://gist.github.com/WeiChiaChang/abe92ca2e8da86ef69560b63903e8764>).
-* The code for the two column responsive [layout](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive) and [fixed navigation](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive) from www.w3schools.com.
+* The code for the Modal [layout](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive) and [fixed navigation](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_two_columns_responsive) from www.w3schools.com.
 - To add the overlay to the home page, I took the idea from the [dcode](https://www.youtube.com/watch?v=exb2ab72Xhs) YouTude vedio.
-* Animation added to the home text is taken from the Code Institute's [Love Running](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/tree/main) project.
+* The questions are taken from [Mentimeter](https://www.mentimeter.com/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates#general-knowledge) and [Radiotimes](https://www.radiotimes.com/tv/tv-listings/) websites.
 
 ### Media
-The imge used as a background image is taken from [Pixabay].
+The logo was created with the help of the website [FreeLogoDesign].
 
 ### Acknowledgements
-* Inspirational support from [Karina Finegan](https://kairosity.github.io/milestone-project-1-cv-website/?#home-section) project.
-* Ideas were taken from the Code Institute's Coffee House and Love Running projects.
+* Inspirational support from [Trivia_Quiz](https://constantinadrian.github.io/Trivia_Quiz/index.html#categories) project.
 * The the Code Institute tutor support team for helping me with the correct guidance.
-* My mentor, Medale Oluwafemi, for his invaluable guidance.
+* Last but not the least, my mentor, Medale Oluwafemi, for his invaluable guidance.
