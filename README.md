@@ -57,21 +57,18 @@ I came up with the following points, which are applicable to the users:
 - As a user, I want clear instructions on how to play the game and access resources.
 
 ### Strategy
-The goal is to make a well-functioning professional CV website. The focus was on making the design both user-friendly and creative.
+The goal is to create a well-functioning online quiz website that not only meets users' needs but also keeps them engaged, informed, and entertained while learning.
 
 ### Scope
-For the users (employers and recruiters), I wanted to give them a good overview of myself (Anjalee Kulasinghe), focusing on my experience, education, and skills. This way, the users can get a better idea of who I am and whether I am a potential candidate for the vacancy. As well, I kept the traditional CV format so it would be easy for the users to find information about me.
+As the developer, I wanted to provide an engaging and interactive platform for players to test their knowledge on various subjects. By creating a user-friendly, visually appealing, and mobile-responsive interface that helps the user experience a seamless game, by offering a diverse range of quizzes to cater to diverse interests and skill levels, and by providing instant feedback to motivate continuous participation and learning.
 
 ### Structure
-I followed the traditional CV framework since it is not overly complicated and it will be easy for the users to find the information they are looking for. The Online CV website has a single, long, scrolling page design. My structure features a fixed top navigation that connects the user to each of the sections from anywhere on the page. I have also included a link at the end of the navigation to download a copy of the traditional CV if the user likes that format.
+I followed the simple layout so the interface would be user-friendly. Game instructions are given before the quiz starts. All questions are multiple-choice questions, and there is only one answer. At the top of the quiz window, the current question answer is shown with the progress bar, score, and timer visible to the player, so the player can easily keep track.
 
 **Website Sections:**
-1. **_Home / Landing page:_** A simple introduction about myself.
-2. **_Experience:_** My work histories are displayed in reverse chronological order.
-3. **_Education:_** My education history is displayed in reverse chronological order.
-4. **_Skills:_** Four focus areas are divided into boxes, which include my professional skillset, language proficiency, technical languages, and technical tools that I am familiar with.
-5. **_Contact:_** A contact page featuring basic contact information, and a contact form to contact me via the webpage.
-6. **_Footer:_** This is not the main section of the website but rather an ending to the website with social media links and copywriting information.
+1. **_Home / Landing page:_** A welcome message to the Quiz Saga and let the user select a user name. A message will display along with the given user name by the player to make it a little bit personal to the player and explain the two buttons.
+2. **_Game page:_** The page will display the quiz questions (five questions for a single quiz), and at the end of the quiz, the player can know the total score and decide whether to play again or go to the home page.
+3. **_Footer:_** This is not the main section of the website but rather an ending to the website with social media links and copywriting information.
 
 ### Skeleton
 The website is designed to be clear and simple. And the site has a simple tree structure with hierarchical flows from top to bottom.
