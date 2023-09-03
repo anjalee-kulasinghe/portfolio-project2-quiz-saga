@@ -74,7 +74,7 @@ I followed the simple layout so the interface would be user-friendly. Game instr
 The website is designed to be clear and simple. And the site has a simple structure with hierarchical flows from top to bottom.
 
 **Wireframe**
-The wireframe is designed using Balsamiq software. The first draft was edited with the guidance of the mentor. The site was built with two main pages, and the wireframe was designed to focus on each page. The game page focuses on the single question and the result.
+The wireframe is designed using Balsamiq software. The first draft was edited with the guidance of the mentor. The site was built with two main pages, and the wireframe was designed to focus on each page. The game page focuses on the single question and the result. I have decided not to use the navigation, which I have included in the wireframe design.
 
 My wireframe design in the [(pdf format)](assets/readme-assets/wireFrame.pdf)
 
@@ -118,12 +118,12 @@ _Main color palette_
 ![How to play_Button](assets/readme-assets/Quiz_Instruction.PNG)
 
 - **Start the quiz**
-  - In the quiz section, on the top left side, the question progress bar is displayed. In the middle, the player's current score and the right timer for each question are given. The timer is set to 10 seconds.
-  - Below the header area, a question is displayed along with the four answer choices. The player is allowed to select only one answer. After selecting the answer, the Next button will be displayed to the user.
-  - Correct answer will be highlighted in green.
-  - If the user selects the wrong answer, the wrong answer is highlighted in red, and at the same time, the correct answer is highlighted in green.
-  - When the user selects an answer, the select option will be disabled. Accordingly, the question progress bar and the score will change, and the timer will reset to the next question.
-  - If the user does not select an answer, it will automatically direct the player to the next question.
+  - In the quiz section, on the top left side, the question progress bar is displayed. In the middle, the player's current score and the right timer for each question are given. The timer is set to 10 seconds.
+  - Below the header area, a question is displayed along with the four answer choices. The player is allowed to select only one answer. After selecting the answer, the Next button will be displayed to the user.
+  - Correct answer will be highlighted in green.
+  - If the user selects the wrong answer, the wrong answer is highlighted in red, and at the same time, the correct answer is highlighted in green.
+  - When the user selects an answer, the select option will be disabled. Accordingly, the question progress bar and the score will change, and the timer will reset to the next question.
+  - If the user does not select an answer, it will automatically direct the player to the next question.
 
 ![Quiz_start](assets/readme-assets/quiz_window.PNG)
 
@@ -212,6 +212,7 @@ When I checked my site on a Samsung Galaxy S23 Ultra with the Samsung browser, I
 * For the timer, I took the idea from the [Invention Tricks](https://www.youtube.com/watch?v=WHHYz8rZmDU&list=PLuumbB6r824HbAiVGGK_s3lcFsqmG9VyL&index=4) YouTude vedio.
 * To get five random questions from a given list of question array in javeScript, I took the idea from the [Stackoverflow](https://stackoverflow.com/questions/75044463/get-5-random-questions-from-a-list-of-10-in-js) website.
 * The questions are taken from [Mentimeter](https://www.mentimeter.com/blog/audience-energizers/55-free-trivia-and-fun-quiz-question-templates#general-knowledge) and [Radiotimes](https://www.radiotimes.com/tv/tv-listings/) websites.
+* The footer section code and the ReadMe file Deployment section was taken from my 1st project [Online CV](https://github.com/anjalee-kulasinghe/portfolio-project1-cv-website/tree/main).
 
 ### Media
 The logo was created with the help of the website [FreeLogoDesign].
