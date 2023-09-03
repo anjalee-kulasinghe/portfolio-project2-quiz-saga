@@ -76,6 +76,12 @@ body {
     display: none;
 }
 
+#error-message{
+    color: red;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
 /* style the buttons */
 .btn {
     font-size: 1.5rem;

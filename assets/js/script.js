@@ -1,6 +1,8 @@
 let userName = document.querySelector("#userName");
 let headingText = document.querySelector("#headingText");
 let userPage = document.querySelector("#userPage");
+let submitButton = document.querySelector("#userName");
+
 /**
  * Welcome message with the username user has enetered
  */
@@ -12,11 +14,35 @@ function greetings() {
     headingText.style.textAlign = "center";
     userPage.style.display = "none";
 
+    // Disable the submit button
+    submitButton.disabled = true;
+
     // Display the hidden buttons
     let startButton = document.querySelector('a[href="game.html"]');
     let howToPlayButton = document.getElementById("myBtn");
     startButton.removeAttribute("hidden");
     howToPlayButton.removeAttribute("hidden");
+}
+
+/**
+ * Will display an error message to the user if they are trying to click the submit button
+ * without giving a user name
+ */
+function validateAndSubmit() {
+    let userNameInput = document.getElementById("userName");
+    let errorMessage = document.getElementById("error-message");
+
+    if (userNameInput.value.trim() === "") {
+        errorMessage.textContent = "Please enter a username.";
+    } else {
+        // Clear any previous error message
+        errorMessage.textContent = "";
+
+        // Enable the submit button
+        submitButton.disabled = false;
+
+        greetings();
+    }
 }
 
 //Code for the Modal

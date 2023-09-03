@@ -24,8 +24,9 @@
             <section class="welcome-section"> <br>
                 <h2 id="headingText">Enter your user name:</h2>
                 <div id="userPage" class="user-page">
-                    <input type="text" id="userName" placeholder="Type the user name"> <br>
-                    <button onclick="greetings()" class="btn">Submit</button>
+                    <input type="text" id="userName" placeholder="Type the user name" required> <br>
+                    <div id="error-message"></div>
+                    <button onclick="validateAndSubmit()" class="btn">Submit</button>
                 </div>
             </section>
             <!-- End of the user section -->
