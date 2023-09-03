@@ -209,7 +209,7 @@ In the future,
 * The footer section code and the ReadMe file deployment section were taken from my 1st project [Online CV](https://github.com/anjalee-kulasinghe/portfolio-project1-cv-website/tree/main).
 
 ### Media
-The logo was created with the help of the website [FreeLogoDesign].
+The logo was created with the help of the website [FreeLogoDesign](https://www.freelogodesign.org/manager/logo/0999ceaa389b4fa49d1bbd57c86cfdc4/showcase).
 
 ### Acknowledgements
 * Inspirational support from [Trivia_Quiz](https://constantinadrian.github.io/Trivia_Quiz/index.html#categories) project.
