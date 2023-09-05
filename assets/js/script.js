@@ -1,19 +1,18 @@
-let userName = document.querySelector("#user-name");
+let userNameInput = document.getElementById("user-name");
 let headingText = document.querySelector("#heading-text");
 let userPage = document.querySelector("#user-page");
-let submitButton = document.querySelector("#user-name");
 
 /**
  * Welcome message with the username user has enetered
  */
 function greetings() {
     headingText.innerHTML = "";
-    headingText.innerHTML = "Hello " + userName.value + "<br><br>";
+    headingText.innerHTML = "Hello " + userNameInput.value + "<br><br>";
     headingText.style.textAlign = "center";
     userPage.style.display = "none";
 
     // Disable the submit button
-    submitButton.disabled = true;
+    userNameInput.disabled = true;
 
     // Display the hidden buttons
     let startButton = document.querySelector('a[href="game.html"]');
@@ -27,7 +26,6 @@ function greetings() {
  * without giving a user name
  */
 function validateAndSubmit() {
-    let userNameInput = document.getElementById("user-name");
     let errorMessage = document.getElementById("error-message");
 
     if (userNameInput.value.trim() === "") {
@@ -37,7 +35,7 @@ function validateAndSubmit() {
         errorMessage.textContent = "";
 
         // Enable the submit button
-        submitButton.disabled = false;
+        userNameInput.disabled = false;
 
         greetings();
     }

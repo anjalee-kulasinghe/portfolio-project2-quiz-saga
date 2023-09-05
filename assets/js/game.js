@@ -138,7 +138,7 @@ let selectedQuestions = [];
 questions = shuffleArray(questions);
 
 let scoreText = document.querySelector("#score");
-let progressBarFull = document.querySelector("#progressBarFull");
+let progressBarFull = document.querySelector("#progress-bar-full");
 
 /* variables to store the question index and the score */
 let currentQuestionIndex = 0;
@@ -153,7 +153,7 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "Next";
     
-    // Take the first 5 questions from the shuffled array
+    /* Take the first 5 questions from the shuffled array */
     selectedQuestions = questions.slice(0, 5);
     
     showQuestion();
@@ -166,13 +166,12 @@ function startQuiz() {
  * Take the question and the answer from the questions array and give a nuber to the question.
  */
 function  showQuestion() {
-    resetState(); 
+    resetQuizArea(); 
     let currentQuestion = selectedQuestions[currentQuestionIndex];
     let questionNumber = currentQuestionIndex + 1;
     quizElement.innerHTML = questionNumber + ". " + currentQuestion.question;
 
-    // Start the timer
-    startTimer(10); // 10 seconds timer
+    startTimer(10);// Start the timer
 
     progressText.innerHTML = `Question ${questionNumber} of ${selectedQuestions.length}`;
     progressBarFull.style.width = `${(questionNumber / selectedQuestions.length) * 100}%`
@@ -205,9 +204,9 @@ function shuffleArray(array) {
 }
 
 /**
-*re-set the answers area
+*re-set the question and answers area
 */
-function resetState() {
+function resetQuizArea() {
     nextButton.style.display = "none";
     while(answerElements.firstChild)
     {
@@ -229,7 +228,7 @@ function selectAnswer(e){
         selectedAnswer.classList.add("incorrect");
     }
 
-    /* let the user allow only to select one answer. if the answer is incorrect highligt the correct answer*/
+    /* If the answer is incorrect highligt the correct answer*/
     Array.from(answerElements.children).forEach(button => {
         if(button.dataset.correct === "true") {
             button.classList.add("correct");
@@ -273,10 +272,10 @@ function handleNextButton(){
 }
 
 /**
- * will display the final score of the user
+ * Will display the final score of the user
  */
 function showScore(){
-    resetState();
+    resetQuizArea();
     quizElement.innerHTML = `You have scored ${score} out of ${selectedQuestions.length}!`;
     nextButton.innerHTML = "Play again";
     nextButton.style.display = "block";
