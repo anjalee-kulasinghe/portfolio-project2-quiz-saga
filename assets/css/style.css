@@ -93,6 +93,7 @@ body {
     color: white;
     background: #007acc;
     border-radius: 4px;
+    border: none;
 }
 
 .main-button:hover {
