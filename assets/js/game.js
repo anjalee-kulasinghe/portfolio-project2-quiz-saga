@@ -127,9 +127,9 @@ let questions = [
 // --------------------------------------------------------------------------------------------------------------------------
 
 let quizElement = document.getElementById("question");
-let answerElements = document.getElementById("quizAnswers");
-let nextButton = document.getElementById("btnNext");
-let homeButton = document.getElementById("btnHome");
+let answerElements = document.getElementById("quiz-answers");
+let nextButton = document.getElementById("button-next");
+let homeButton = document.getElementById("button-home");
 
 // Separate array to hold selected questions
 let selectedQuestions = [];
@@ -180,7 +180,7 @@ function  showQuestion() {
     currentQuestion.answers.forEach(answer => {
         let button = document.createElement("button");
         button.innerHTML = answer.text;
-        button.classList.add("gameAnswer");
+        button.classList.add("game-answer");
         answerElements.appendChild(button);
 
         /* assign the true or false */

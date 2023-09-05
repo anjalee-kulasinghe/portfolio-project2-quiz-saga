@@ -11,9 +11,9 @@ body {
     font-family: 'Lato', cursive;
 }
 
-.heding1,
-.heding2,
-.heding3 {
+.heding-one,
+.heding-two,
+.heding-three {
     font-family: 'Bree Seri', sans-serif;
     color: black;
     padding-bottom: 1rem;
@@ -21,7 +21,7 @@ body {
 
 /* index page */
 /* ------------------------------------------------------------------- user section */
-#userName {
+#user-name {
     font-size: 1.5rem;
     padding: 1rem 0;
     width: 30rem;
@@ -29,11 +29,11 @@ body {
     border-radius: 4px;
 }
 
-#headingText {
+#heading-text {
     text-align: center;
 }
 
-.user-page {
+#user-page {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,8 +83,9 @@ body {
 }
 
 /* style the buttons */
-.btn {
+.main-button {
     font-size: 1.5rem;
+    font-family: 'Bree Seri', sans-serif;
     padding: 1rem 0;
     width: 15rem;
     text-align: center;
@@ -94,14 +95,14 @@ body {
     border-radius: 4px;
 }
 
-.btn:hover {
+.main-button:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(153, 157, 160, 0.6);
     transition: transform 150ms;
     transform: scale(1.05);
 }
 
-.btn[disabled]:hover {
+.main-button[disabled]:hover {
     cursor: no-drop;
     box-shadow: none;
     transform: none;
@@ -194,13 +195,6 @@ body {
     font-weight: 600
 }
 
-.totalTime{
-    font-family: 'Bree Seri', sans-serif;
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 600
-}
-
 /* ------------------------------------------------------------------- questions progress bar*/
 #progressBar {
     width: 8rem;
@@ -232,7 +226,7 @@ body {
 }
 
 /* ------------------------------------------------------------------- four answers area */
-.gameAnswer {
+.game-answer {
     background-color: #f9f8f6;
     color: #222;
     width: 100%;
@@ -247,26 +241,27 @@ body {
     font-weight: 600;
 }
 
-.gameAnswer:hover:not([disabled]) {
+.game-answer:hover:not([disabled]) {
     background-color: #1284ce;
     color: #f9f8f6;
 }
 
-.gameAnswer:disabled {
+.game-answer:disabled {
     cursor: no-drop;
 }
 
-#btnNext, #btnHome {
+#button-next, #button-home {
     background-color: #007acc;
     color: #f9f8f6;
     border: 0;
     width: 150px;
     padding: 10px;
-    margin: 20px auto 0;
+    margin: 0px auto;
     border-radius: 4px;
     cursor: pointer;
     display: none;
     font-size: 1.4rem;
+    font-family: 'Bree Seri', sans-serif;
 }
 
 /* ------------------------------------------------------------------- Add background color for correct and incorrect answers */
@@ -299,11 +294,11 @@ input::placeholder {
     color: #D9DDDC;
 }
 
-#saveScore {
+#save-score {
     border: none;
 }
 
-#endText {
+#end-text {
     font-size: 2.4rem;
     color: #000000;
     text-align: center;
@@ -314,10 +309,6 @@ footer {
     background-color: #007acc;
     padding: 1em;
     text-align: center;
-    /* width: auto;
-    bottom: 0;
-    right: 0;
-    z-index: 3; */
     clear: both;
     overflow: auto;
 }
@@ -350,7 +341,7 @@ footer>p {
         padding: 10px; /* Add some padding for better spacing on smaller screens */
     }
 
-    #btnNext, #btnHome {
+    #button-next, #button-home {
         display: block; /* Show the buttons on smaller screens */
     }
 
@@ -363,28 +354,29 @@ footer>p {
         font-size: 1.8rem;
     }
 
-    .gameAnswer {
+    .game-answer {
         font-size: 1.2rem;
     }
 }
 
 /* ---------------------------------------------------- For screen size from 550px wide and down */
 @media screen and (max-width: 550px) {
-    .heding1,
-    .heding2,
-    .heding3 {
+    .heding-one,
+    .heding-two,
+    .heding-three {
         font-size: 1.2rem;
         padding-bottom: 0.5rem;
         text-align: center;
     }
 
-    #userName {
+    #user-name {
         font-size: 1.2rem;
         padding: 0.5rem 0;
-        width: 90%; 
+        width: 90%;
+        
     }
 
-    .btn {
+    .main-button {
         font-size: 1.2rem;
         padding: 0.5rem 0;
         width: 90%; 
@@ -407,8 +399,7 @@ footer>p {
     }
 
     .timer-text,
-    .seconds-text,
-    .totalTime {
+    .seconds-text {
         font-size: 1rem;
     }
 
@@ -416,12 +407,12 @@ footer>p {
         width: 6rem;
     }
 
-    .gameAnswer {
+    .game-answer {
         font-size: 0.9rem;
     }
 
-    #btnNext,
-    #btnHome {
+    #button-next,
+    #button-home {
         width: 120px;
         padding: 8px;
         font-size: 1rem;
@@ -435,9 +426,9 @@ footer>p {
 
 /* ---------------------------------------------------- For screen size from 360px wide and down */
 @media screen and (max-width: 360px) {
-    .heding1,
-    .heding2,
-    .heding3 {
+    .heding-one,
+    .heding-two,
+    .heding-three {
         font-size: 1rem;
         text-align: center;
     }
@@ -449,13 +440,13 @@ footer>p {
         padding: 0;
       }
 
-    #userName {
+    #user-name {
         font-size: 1rem;
         padding: 0.5rem 0;
         width: 90%;
     }
 
-    .btn {
+    .main-button {
         font-size: 1rem;
         padding: 0.5rem 0;
         width: 90%;
@@ -470,8 +461,7 @@ footer>p {
     }
 
     .timer-text,
-    .seconds-text,
-    .totalTime {
+    .seconds-text {
         font-size: 1rem;
     }
 
@@ -481,11 +471,11 @@ footer>p {
         margin-top: 0.3rem;
     }
 
-    #headingText {
+    #heading-text {
         font-size: 1rem;
     }
 
-    .gameAnswer {
+    .game-answer {
         font-size: 1rem;
     }
 
@@ -493,15 +483,15 @@ footer>p {
         font-size: 1rem;
     }
 
-    #btnNext,
-    #btnHome {
+    #button-next,
+    #button-home {
         width: 120px;
         padding: 8px;
         margin-top: 10px;
         font-size: 1rem;
     }
 
-    #endText {
+    #end-text {
         font-size: 1rem;
     }
 }

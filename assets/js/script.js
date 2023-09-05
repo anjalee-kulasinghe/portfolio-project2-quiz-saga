@@ -1,16 +1,14 @@
-let userName = document.querySelector("#userName");
-let headingText = document.querySelector("#headingText");
-let userPage = document.querySelector("#userPage");
-let submitButton = document.querySelector("#userName");
+let userName = document.querySelector("#user-name");
+let headingText = document.querySelector("#heading-text");
+let userPage = document.querySelector("#user-page");
+let submitButton = document.querySelector("#user-name");
 
 /**
  * Welcome message with the username user has enetered
  */
 function greetings() {
     headingText.innerHTML = "";
-    headingText.innerHTML = "Hello " + userName.value + ".<br><br>" +
-    "Select the 'Start the quiz' to play the quiz.<br>" +
-    "Click the 'How to Play' to read the instructions.";
+    headingText.innerHTML = "Hello " + userName.value + "<br><br>";
     headingText.style.textAlign = "center";
     userPage.style.display = "none";
 
@@ -19,7 +17,7 @@ function greetings() {
 
     // Display the hidden buttons
     let startButton = document.querySelector('a[href="game.html"]');
-    let howToPlayButton = document.getElementById("myBtn");
+    let howToPlayButton = document.getElementById("my-button");
     startButton.removeAttribute("hidden");
     howToPlayButton.removeAttribute("hidden");
 }
@@ -29,7 +27,7 @@ function greetings() {
  * without giving a user name
  */
 function validateAndSubmit() {
-    let userNameInput = document.getElementById("userName");
+    let userNameInput = document.getElementById("user-name");
     let errorMessage = document.getElementById("error-message");
 
     if (userNameInput.value.trim() === "") {
@@ -47,11 +45,11 @@ function validateAndSubmit() {
 
 //Code for the Modal
 document.addEventListener("DOMContentLoaded", function() {
-    let modal = document.getElementById("myModal");
-    let btn = document.getElementById("myBtn");
+    let modal = document.getElementById("my-modal");
+    let myButton = document.getElementById("my-button");
     let span = document.getElementsByClassName("close")[0];
 
-    btn.onclick = function() {
+    myButton.onclick = function() {
         modal.style.display = "block";
     }
 
