@@ -3,11 +3,11 @@ let headingText = document.querySelector("#heading-text");
 let userPage = document.querySelector("#user-page");
 
 /**
- * Welcome message with the username user has enetered
+ * Welcome message with the username player has enetered
  */
 function greetings() {
     headingText.innerHTML = "";
-    headingText.innerHTML = "Hello " + userNameInput.value + "<br><br>";
+    headingText.innerHTML = "Hello " + userNameInput.value + "<br>";
     headingText.style.textAlign = "center";
     userPage.style.display = "none";
 
@@ -22,8 +22,9 @@ function greetings() {
 }
 
 /**
- * Will display an error message to the user if they are trying to click the submit button
- * without giving a user name
+ * Will display an error message to the player 
+ * if they are trying to click the submit button
+ * without giving a username
  */
 function validateAndSubmit() {
     let errorMessage = document.getElementById("error-message");
@@ -41,7 +42,7 @@ function validateAndSubmit() {
     }
 }
 
-//Code for the Modal
+/* Code for the Modal */
 document.addEventListener("DOMContentLoaded", function() {
     let modal = document.getElementById("my-modal");
     let myButton = document.getElementById("my-button");

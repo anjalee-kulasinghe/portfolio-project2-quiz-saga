@@ -11,9 +11,9 @@ body {
     font-family: 'Lato', cursive;
 }
 
-.heding-one,
-.heding-two,
-.heding-three {
+.heading-one,
+.heading-two,
+.heading-three {
     font-family: 'Bree Seri', sans-serif;
     color: black;
     padding-bottom: 1rem;
@@ -31,6 +31,7 @@ body {
 
 #heading-text {
     text-align: center;
+    padding-bottom: 5px;
 }
 
 #user-page {
@@ -44,14 +45,11 @@ body {
 /*  ------------------------------------------------------------------- */
 
 .container {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 2rem;
 }
 
 .flex-column {
@@ -308,10 +306,12 @@ input::placeholder {
 /* ------------------------------------------------------------------- footer area */
 footer {
     background-color: #007acc;
-    padding: 1em;
     text-align: center;
     clear: both;
     overflow: auto;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer>p {
@@ -362,9 +362,9 @@ footer>p {
 
 /* ---------------------------------------------------- For screen size from 550px wide and down */
 @media screen and (max-width: 550px) {
-    .heding-one,
-    .heding-two,
-    .heding-three {
+    .heading-one,
+    .heading-two,
+    .heading-three {
         font-size: 1.2rem;
         padding-bottom: 0.5rem;
         text-align: center;
@@ -427,9 +427,9 @@ footer>p {
 
 /* ---------------------------------------------------- For screen size from 360px wide and down */
 @media screen and (max-width: 360px) {
-    .heding-one,
-    .heding-two,
-    .heding-three {
+    .heading-one,
+    .heading-two,
+    .heading-three {
         font-size: 1rem;
         text-align: center;
     }

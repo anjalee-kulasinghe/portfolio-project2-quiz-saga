@@ -1,6 +1,6 @@
-// Adding questions and answers to an array
+/* Adding questions and answers to an array */
 let questions = [
-    /* question 1 */
+    // question 1
     {
         question: "What is the smallest planet in our solar system?",
         answers: [
@@ -10,9 +10,37 @@ let questions = [
             {text: "Mars", correct:false},            
         ]
     },
-    // ... other questions ...
-
-    /* question 5 */
+    // question 2
+    {
+        question: "What country has won the most World Cups?",
+        answers: [
+            {text: "Brazil", correct:true},
+            {text: "Spain", correct:false},
+            {text: "Argentina", correct:false},
+            {text: "France", correct:false},            
+        ]
+    },
+    // question 3
+    {
+        question: "How many bones do we have in an ear?",
+        answers: [
+            {text: "2", correct:false},
+            {text: "4", correct:false},
+            {text: "3", correct:true},
+            {text: "5", correct:false},            
+        ]
+    },
+    // question 4
+    {
+        question: "What city is known as 'The Eternal City'?",
+        answers: [
+            {text: "Amsterdam", correct:false},
+            {text: "Rome", correct:true},
+            {text: "Florence", correct:false},
+            {text: "Venice", correct:false},            
+        ]
+    },
+    // question 5
     {
         question: "What was the most popular girls name in the UK in 2021?",
         answers: [
@@ -22,7 +50,7 @@ let questions = [
             {text: "Lily", correct:false},            
         ]
     },
-    /* question 6 */
+    // question 6
     {
         question: "What country has the highest life expectancy?",
         answers: [
@@ -33,7 +61,7 @@ let questions = [
         ]
     },
 
-    /* question 7 */
+    // question 7
     {
         question: "Who was the Ancient Greek God of the Sun?",
         answers: [
@@ -43,7 +71,7 @@ let questions = [
             {text: "Artemis", correct:false},            
         ]
     },
-    /* question 8 */
+    // question 8
     {
         question: "What year was the United Nations established? ",
         answers: [
@@ -53,7 +81,7 @@ let questions = [
             {text: "1955", correct:false},            
         ]
     },
-    /* question 9 */
+    // question 9
     {
         question: "Who has won the most total Academy Awards?",
         answers: [
@@ -63,7 +91,7 @@ let questions = [
             {text: "Walt Disney", correct:true},            
         ]
     },
-    /* question 10 */
+    // question 10
     {
         question: 'What company was originally called "Cadabra"?',
         answers: [
@@ -73,7 +101,7 @@ let questions = [
             {text: "eBay", correct:false},            
         ]
     },
-    /* question 11 */
+    // question 11 
     {
         question: "How many elements are in the periodic table?",
         answers: [
@@ -83,7 +111,7 @@ let questions = [
             {text: "118", correct:true},            
         ]
     },
-    /* question 12 */
+    // question 12
     {
         question: "How many ghosts chase Pac-Man at the start of each game?",
         answers: [
@@ -93,7 +121,7 @@ let questions = [
             {text: "1", correct:false},            
         ]
     },
-    /* question 13 */
+    // question 13
     {
         question: "What country drinks the most coffee per capita?",
         answers: [
@@ -103,7 +131,7 @@ let questions = [
             {text: "Norway", correct:false},            
         ]
     },
-    /* question 14 */
+    // question 14
     {
         question: 'What company was initially known as "Blue Ribbon Sports"?',
         answers: [
@@ -113,7 +141,7 @@ let questions = [
             {text: "Nike", correct:true},            
         ]
     },
-    /* question 15 */
+    // question 15
     {
         question: "What sports car company manufactures the 911?",
         answers: [
@@ -130,20 +158,16 @@ let quizElement = document.getElementById("question");
 let answerElements = document.getElementById("quiz-answers");
 let nextButton = document.getElementById("button-next");
 let homeButton = document.getElementById("button-home");
-
-// Separate array to hold selected questions
-let selectedQuestions = [];
-
-// Shuffle the questions array to randomize the order
-questions = shuffleArray(questions);
-
 let scoreText = document.querySelector("#score");
 let progressBarFull = document.querySelector("#progress-bar-full");
 
-/* variables to store the question index and the score */
+let selectedQuestions = []; // Separate array to hold selected questions
 let currentQuestionIndex = 0;
 let score = 0;
 let timer;
+
+// Shuffle the questions array to randomize the order
+questions = shuffleArray(questions);
 
 /**
  * Start of the quiz.
@@ -153,7 +177,7 @@ function startQuiz() {
     score = 0;
     nextButton.innerHTML = "Next";
     
-    /* Take the first 5 questions from the shuffled array */
+    // Take the first 5 questions from the shuffled array
     selectedQuestions = questions.slice(0, 5);
     
     showQuestion();
@@ -163,7 +187,7 @@ function startQuiz() {
 }
 
 /**
- * Take the question and the answer from the questions array and give a nuber to the question.
+ * Take the question and the answer from the questions array and give a number to the question.
  */
 function  showQuestion() {
     resetQuizArea(); 
@@ -182,8 +206,8 @@ function  showQuestion() {
         button.classList.add("game-answer");
         answerElements.appendChild(button);
 
-        /* assign the true or false */
-        if(answer.correct){
+        // Assign the true or false to the answer
+        if (answer.correct){
             button.dataset.correct = answer.correct;
         }
 
@@ -193,7 +217,7 @@ function  showQuestion() {
 
 /**
 * Shuffles the array randomly and  
-* give 5 questions to the users
+* give 5 questions to the player
 */
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -204,23 +228,23 @@ function shuffleArray(array) {
 }
 
 /**
-*re-set the question and answers area
+* Re-set the question and answers area
 */
 function resetQuizArea() {
     nextButton.style.display = "none";
-    while(answerElements.firstChild)
+    while (answerElements.firstChild)
     {
         answerElements.removeChild(answerElements.firstChild);
     }
 }
 
 /**
- * select the correct answer
+ * Select the correct answer
  */
 function selectAnswer(e){
     let selectedAnswer = e.target;
     let isCorrect = selectedAnswer.dataset.correct === "true";
-    if(isCorrect){
+    if (isCorrect) {
         selectedAnswer.classList.add("correct");
         score ++;
         scoreText.innerHTML = score;
@@ -228,20 +252,20 @@ function selectAnswer(e){
         selectedAnswer.classList.add("incorrect");
     }
 
-    /* If the answer is incorrect highligt the correct answer*/
+    // If the answer is incorrect highligt the correct answer
     Array.from(answerElements.children).forEach(button => {
-        if(button.dataset.correct === "true") {
+        if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
-        button.disabled = true; //disable selecting another answer
+        button.disabled = true; // Disable selecting another answer
     });
     
-    /* let the next button appear to the user */
+    // Let the next button appear to the user
     nextButton.style.display = "block";
 }
 
 /**
- * start the countdown timer
+ * Start the countdown timer
  */
 function startTimer(seconds) {
     let timeLeft = seconds;
@@ -258,13 +282,13 @@ function startTimer(seconds) {
 }
 
 /**
- * check whether there is a next question 
- * if not display the score of the user
+ * Check whether there is a next question 
+ * if not display the total score of the player
  */
-function handleNextButton(){
+function handleNextButton() {
     clearInterval(timer);
     currentQuestionIndex++;
-    if(currentQuestionIndex < selectedQuestions.length) {
+    if (currentQuestionIndex < selectedQuestions.length) {
         showQuestion();
     } else {
         showScore();
@@ -272,9 +296,11 @@ function handleNextButton(){
 }
 
 /**
- * Will display the final score of the user
+ * Re-set the quiz area
+ * display the final score of the player
+ * and display the buttons to play again and Home page 
  */
-function showScore(){
+function showScore() {
     resetQuizArea();
     quizElement.innerHTML = `You have scored ${score} out of ${selectedQuestions.length}!`;
     nextButton.innerHTML = "Play again";
@@ -292,7 +318,9 @@ function showScore(){
     });
 }
 
-/* Define the next button actions */
+/** 
+ * Define the next button actions
+*/
 function handleQuizAction() {
     if (currentQuestionIndex < selectedQuestions.length) {
         handleNextButton();
