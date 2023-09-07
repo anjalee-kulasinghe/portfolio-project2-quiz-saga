@@ -7,7 +7,8 @@ let userPage = document.querySelector("#user-page");
  */
 function greetings() {
     headingText.innerHTML = "";
-    headingText.innerHTML = "Hello " + userNameInput.value + "<br>";
+    headingText.innerHTML = "Hello " + userNameInput.value + "<br><br>" +
+        "Are you ready...... ";
     headingText.style.textAlign = "center";
     userPage.style.display = "none";
 
@@ -44,6 +45,13 @@ function validateAndSubmit() {
         greetings();
     }
 }
+
+// Event listener to the input field for the "Submit" action
+userNameInput.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+        validateAndSubmit();
+    }
+});
 
 /* Code for the Modal */
 document.addEventListener("DOMContentLoaded", function () {
