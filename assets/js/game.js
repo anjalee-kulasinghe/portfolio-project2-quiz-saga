@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 /* Adding questions and answers to an array */
 let questions = [
     // question 1

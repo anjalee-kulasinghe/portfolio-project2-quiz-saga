@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 let userNameInput = document.getElementById("user-name");
 let headingText = document.querySelector("#heading-text");
 let userPage = document.querySelector("#user-page");
