@@ -7,6 +7,8 @@ This website was developed to showcase my ability to design and create a static 
 Quiz Saga is a multiple-choice online game that is engaging and educational. Players can test their knowledge in different areas while having fun. 
 
 # Table of Contents
+- [Qize Saga](#qize-saga)
+  - [Code Institute - Second Milestone Project: JavaScript Essentials Portfolio Project.](#code-institute---second-milestone-project-javascript-essentials-portfolio-project)
 - [Table of Contents](#table-of-contents)
   - [Demo](#demo)
     - [A live demo to the website can be found here](#a-live-demo-to-the-website-can-be-found-here)
@@ -131,9 +133,9 @@ _Main color palette_
 
 
 - **End the quiz**
-  - At the end of the game, the player can see the total score he or she has scored and two buttons.
-  - _Play again:_ Direct the player to play the quiz again. Will provide five new questions for the user.
-  - _Go to Start:_ Go to the start page, where users can start the game as new users.
+  - At the end of the game, the player can see the total score that has been scored with the username the player has given and two buttons.
+  - _Play again:_ Direct the player to play the quiz again. Will provide five new questions for the user.
+  - _Home:_ Go to the start page, where users can start the game as new users.
 
 
 ![End of qize](assets/readme-assets/endQuiz.PNG)
