@@ -303,7 +303,7 @@ function handleNextButton() {
 function showScore() {
     resetQuizArea();
     // Retrieve the username from localStorage
-    const username = localStorage.getItem("username");
+    let username = localStorage.getItem("username");
     quizElement.innerHTML = `Hello ${username}, You have scored ${score} out of ${selectedQuestions.length}!`;
     nextButton.innerHTML = "Play again";
     nextButton.style.display = "block";
