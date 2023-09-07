@@ -11,6 +11,9 @@ function greetings() {
     headingText.style.textAlign = "center";
     userPage.style.display = "none";
 
+    // Save the username to localStorage
+    localStorage.setItem("username", userNameInput.value);
+
     // Disable the submit button
     userNameInput.disabled = true;
 
@@ -43,23 +46,23 @@ function validateAndSubmit() {
 }
 
 /* Code for the Modal */
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let modal = document.getElementById("my-modal");
     let myButton = document.getElementById("my-button");
     let span = document.getElementsByClassName("close")[0];
 
-    myButton.onclick = function() {
+    myButton.onclick = function () {
         modal.style.display = "block";
-    }
+    };
 
-    span.onclick = function() {
+    span.onclick = function () {
         modal.style.display = "none";
-    }
+    };
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
-    }
+    };
 
 });
