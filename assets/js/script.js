@@ -53,7 +53,7 @@ userNameInput.addEventListener("keyup", function (event) {
     }
 });
 
-/* Code for the Modal */
+// Code for the Modal
 document.addEventListener("DOMContentLoaded", function () {
     let modal = document.getElementById("my-modal");
     let myButton = document.getElementById("my-button");

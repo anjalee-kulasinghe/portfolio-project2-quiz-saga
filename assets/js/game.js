@@ -193,6 +193,7 @@ function showQuestion() {
     resetQuizArea();
     let currentQuestion = selectedQuestions[currentQuestionIndex];
     let questionNumber = currentQuestionIndex + 1;
+    let progressText = document.getElementById("progress-text");
     quizElement.innerHTML = questionNumber + ". " + currentQuestion.question;
 
     startTimer(10);// Start the timer
