@@ -7,7 +7,7 @@ let userPage = document.querySelector("#user-page");
  */
 function greetings() {
     headingText.innerHTML = "";
-    headingText.innerHTML = "Hello " + userNameInput.value + "<br><br>" +
+    headingText.innerHTML = "Hello " + userNameInput.value + "<br>" +
         "Are you ready...... ";
     headingText.style.textAlign = "center";
     userPage.style.display = "none";

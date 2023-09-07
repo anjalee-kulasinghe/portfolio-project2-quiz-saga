@@ -96,8 +96,8 @@ _Main color palette_
 ### Existing Features
 * **Home**
   - Used a flat background color. Included is the logo and a message to welcome you to the Quiz Saga page.
-  - There is a text box for the user to enter the user name.
-  - Submit button will guide you to the next page or section of the website. The player can see an Error message if they try to satrt the game without entering a User Name.
+  - There is a text box for the user to enter the user name.
+  - Submit button will guide you to the next page or section of the website. The player can see an Error message if they try to satrt the game without entering a User Name.
   
 ![home_section](assets/readme-assets/Home-section.PNG)
 
@@ -106,10 +106,10 @@ _Main color palette_
 
 * **Introduction**
   - In the introduction section, on the top logo, the same welcome message is displayed.
-  - Below the welcome message, a greeting to the player is given with the user name entered by the player.
-  - Below the greeting message, the purpose of the two buttons on the screen is explained to the user.
-  - Start the quiz: will direct the player to the quiz.
-  - How to play: give the user quiz instructions. How to play the quiz
+  - Below the welcome message, a greeting to the player is given with the user name entered by the player.
+  - Below the greeting message, two buttons are given to the player.
+    - Start the quiz: will direct the player to the quiz.
+    - How to play: give the user quiz instructions. How to play the quiz
 
 
 ![Introduction_section](assets/readme-assets/Introduction_page.PNG)
